@@ -5,6 +5,9 @@
   font-family:'myriad-pro, Arial';
 
 }
+.body{
+    margin-top: 25px;
+}
 
 .contact{
     position: relative;
@@ -76,6 +79,24 @@ font-weight: 300;
 
 
 }
+.choose{
+    padding: 2%;
+    background-color:burlywood ;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    
+}
+.choose a{
+    color: white;
+    padding: 15px;
+}
+.choose  :hover{
+   background-color: rgba(116, 59, 59, 0.582);
+   border-radius: 25px;
+   
+}
+ 
 .contactForm{
     width:40%;
     padding: 40px;
@@ -145,5 +166,6 @@ input[type="submit"]{
     .body{
         margin-top: 55px;
     }
+
 
 }
