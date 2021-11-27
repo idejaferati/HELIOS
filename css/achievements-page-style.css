@@ -1,0 +1,83 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family:'myriad-pro, Arial';
+
+}
+.result{
+    background-color:rgba(177, 177, 300, 0.5) ;
+    margin-top: 60px;
+    padding-top: 40px;
+    color: white;
+    width: 100%;
+   text-align: center; 
+   padding-right: 20px;
+  
+   
+}
+
+.wrapper{
+    padding: 25px;
+    
+    
+}
+.info{
+    padding: 20px;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+.InternationalAchievements{
+    padding:25px 10px 25px 30px;
+    text-align: left;
+}
+.InternationalAchievements img{
+    float: right;
+    border-radius: 10px;
+}
+.listing{
+    position: relative;
+    right: 2em;
+    padding-left: 40px;
+    
+    
+    
+}
+
+.students{
+    text-align: center;
+    padding: 20px;
+}
+.enter{
+    padding: 10px;
+   
+}
+.people{
+  
+}
+.person{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 17px;
+    background-color: rgba(177, 177, 300, 0.5);
+    margin: 10px;
+    border-radius: 6px;
+    border-style:ridge;
+    
+}
+.note{
+    background-color: silver;
+    font-style: italic;
+    margin: 30px;
+    border-radius: 6px;
+    border-style:ridge;
+    
+}
+
+
+
+

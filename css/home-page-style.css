@@ -33,7 +33,7 @@ section {
 
 /*Upcoming events section*/
 .events-section {
-    margin: 40px 20px;
+    margin: 20px;
     font-family: myriad-pro, Arial;
     color: hsl(0, 0%, 28%);
 } 
@@ -73,7 +73,7 @@ section {
 /*Academic Network section*/
 .academic-section {
     background-color: rgb(166 177 148 / 82%);
-    padding: 40px 20px;
+    padding: 20px;
     color: white;
 }
 .academic-section h1 {

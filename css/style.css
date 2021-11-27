@@ -35,7 +35,7 @@ body
     height: 76px;
 }
 .header-div {
-    background: #f4f3ef;
+    background: #faf9f2;
     position: fixed;
     width: 100%;
     top: 0;
@@ -49,7 +49,7 @@ body
 /*menu style*/
 .menu {
     margin: 0px auto;
-    width: 413px;
+    width: 700px;
     position: relative;
     background-color: #fff3e0;
 }
@@ -94,6 +94,7 @@ body
     width: 100%;
 }
 .footer-div {
+    padding: 8px;
     margin: 0px auto;
     position: relative;
     background-color: rgb(244,243,239);
@@ -115,6 +116,12 @@ body
         display: contents;
     }
 }
+@media screen and (max-width: 500px) {
+    .footer-div {
+        width: 413px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .footer-div {
         width: 518px;
