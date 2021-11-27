@@ -116,12 +116,18 @@ body
         display: contents;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .footer-div {
-        width: 413px;
+        width: 518px;
+        padding: 8px;
     }
     .footer-left-div {
         display: block;
+    }
+}
+@media screen and (max-width: 564px) {
+    .footer-div {
+        width: auto;
     }
 }
 a {
