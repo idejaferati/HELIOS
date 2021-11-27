@@ -1,0 +1,232 @@
+/*stepper*/
+.stepper-div {
+    margin-top: 20px;
+    position: fixed;
+}
+.stepper-item:before {
+    --size: 1em;     /*variable --size*/
+    content: "";
+    position: relative;
+    z-index: 1;
+    flex: 0 0 var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+.stepper-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(0.5rem);
+    width: 2px;
+    background-color: #e0e0e0;
+}
+.stepper-item {
+    position: relative;
+    display: flex;
+    gap: 1em;
+    padding-bottom: 1em;
+} 
+.stepper-item a:visited {
+    color: rgb(238, 162, 175);
+    background-color: transparent;
+    text-decoration: none;
+}
+.stepper-item a:hover, .stepper-item a:active {
+    color: rgb(247, 110, 110);
+    background-color: transparent;
+    text-decoration: none;
+}
+.stepper-title {
+    margin-top: 0;
+}
+
+/*anchors when clicking*/ 
+#introduction {
+    scroll-margin-top: 160px;
+}
+#work {
+    scroll-margin-top: 180px;
+}
+#team {
+    scroll-margin-top: 150px;
+}  
+
+/*body*/
+.data-container {
+    margin-left: 190px;
+}
+.container {
+    margin-top: 46px;
+    display: flex;
+}
+
+
+/*introduction*/
+.introduction-section {
+    flex: 3;
+    padding: 40px;
+}
+.introduction-div {
+    display: flex;
+    justify-content: space-between;
+}
+.quote-div {
+    flex-basis: 28%;
+    background-color: #f27c7eab;
+    color: whitesmoke;
+    border-radius: 4px;
+}
+.quote-div q {
+    font-size: 14px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-align: left;
+}
+.quote-div q::before {
+    content: "\201c";
+}
+.quote-div q::after {
+    content: "\201d";
+}
+.quote-div cite {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 10px 0px 0px;
+    display: block;
+    text-align: right;
+}
+.intro-div {
+    flex-basis: 70%;
+    color: #3f546a;
+    margin-left: 2%;
+}
+#square-ul {
+    list-style-type: square;
+    color: #802b2dab;
+}
+
+/*work*/
+.tables-section {
+    padding: 20px 40px;
+}
+th {
+    text-align: left;
+}
+table.weekly-plan, .weekly-plan th, .weekly-plan td {
+    border: 1px solid black;
+    border-radius: 4px;
+    border-style: ridge;
+    border-color: rgb(250, 216, 175);
+    text-align: -webkit-center;
+}
+.weekly-plan th:not(:nth-child(3)), .weekly-plan td:not(:nth-child(3)) {
+    width: 13%;
+}
+table.weekly-plan {
+    margin: 40px;
+    box-shadow: 7px 7px 2px 1px rgba(0, 0, 255, 0.103);
+}
+.weekly-plan th img {
+    float: left;
+}
+.weekly-plan td span {
+    vertical-align: sub;
+}
+.weekly-plan ol {
+    display: inline-table;
+}
+.weekly-plan ol li {
+    text-align: left;
+}
+colgroup {
+    background: radial-gradient(100% 544.44% at 0% 7.94%,#f8e6d7 0%,#f8bf90 100%);
+}
+
+/*team*/
+.members-div {
+    display: flex;
+    place-content: center;
+}
+.members-table {
+    width: 90%;
+}
+.members-table .member {
+    border-color: #868aca;
+    color: whitesmoke;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    vertical-align: baseline;
+    float: left;
+    width: 100%;
+    padding: 20px 0px 10px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    text-align: center;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-radius: 10px 20px 10px 20px;
+    background: radial-gradient(100% 544.44% at 0% 7.94%,#fba543 0%,#e6700f 100%);
+}
+.members-table th {
+    text-align: center;
+    font-size: 16px;
+}
+.member p {
+    font-weight: bold;
+}
+.member img {
+    width: 240px;
+    height: 150px;
+}
+@media screen and (max-width: 1050px) {
+    .members-table img{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .members-table img{
+        width: 180px;
+        height: 130px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .members-table img{
+        display: none;  /*change it*/
+    }
+}
+@media screen and (max-width: 710px) {
+    .data-container{
+        margin-left: 150px;
+    }
+    .stepper-div {
+        width: 128px;
+    }
+    .tables-section {
+        padding: 10px;
+    }
+    .introduction-section {
+        padding: 40px 10px 10px 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .data-container{
+        margin-left: 140px;
+    }
+    .stepper-div {
+        width: 116px;
+    }
+    .stepper {
+        padding-left: 10px;
+    }
+    .stepper-title {
+        font-size: 0.8em;
+    }
+}

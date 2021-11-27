@@ -33,7 +33,7 @@ section {
 
 /*Upcoming events section*/
 .events-section {
-    margin: 20px;
+    margin: 40px 20px;
     font-family: myriad-pro, Arial;
     color: hsl(0, 0%, 28%);
 } 
@@ -73,7 +73,7 @@ section {
 /*Academic Network section*/
 .academic-section {
     background-color: rgb(166 177 148 / 82%);
-    padding: 20px;
+    padding: 40px 20px;
     color: white;
 }
 .academic-section h1 {
@@ -98,3 +98,71 @@ section {
     background-color: whitesmoke;
     cursor: pointer;
 }
+
+/*goals*/
+.goals-section {
+    padding: 40px 20px;
+}
+.goals-div {
+    display: flex;
+    place-content: center;
+}
+.goals-table {
+    width: 90%;
+}
+.goals-table .goal {
+    max-width: 375px;
+    border-color: #868aca;
+    color: whitesmoke;
+    vertical-align: baseline;
+    float: left;
+    width: 100%;
+    padding: 20px 0px 10px;
+    margin: 5px 15px;
+    border: 5px solid;
+    text-align: center;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-radius: 10px 10px 50px 10px;
+    transition: all .2s ease-in-out; 
+    background: radial-gradient(100% 544.44% at 0% 7.94%,#fba543 0%,#e6700f 100%);
+}
+.goals-table th {
+    text-align: center;
+    font-size: 16px;
+}
+.goal p {
+    width: 93%;
+    height: 85px;
+    padding: 10px;
+}
+@media screen and (max-width: 564px) {
+    .goal p {
+        height: auto;
+    }
+}
+.goal:hover {
+    transform: scale(1.1); 
+}
+.read-button {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 20px;
+    display: inline-block;
+    vertical-align: top;
+    font: 700 14px/20px "FSMe Regular",Helvetica,Arial,sans-serif;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    margin: 10px;
+}
+.read-button:hover {
+    background-color: whitesmoke;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
