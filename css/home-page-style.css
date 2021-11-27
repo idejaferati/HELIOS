@@ -1,0 +1,168 @@
+/*main background image*/
+.main-background-div img {
+    width: 100%;
+    height: auto;
+    margin-top: 69px;
+    position: relative;
+    margin-bottom: 116px;
+}
+@media screen and (max-width: 430px) {
+    .main-background-div img{
+        width: 100vw;
+    }
+}
+
+/*Offers section*/
+.offers-div {
+    display: flex;
+    margin: 10px 20px;
+    position: absolute;
+    z-index: 9;
+    background: #008000a6;
+    bottom: 4px;
+    color: whitesmoke;
+}
+.offers-div div {
+    margin: 10px;
+    border: dashed 1px;
+    padding: 5px;
+}
+section {
+    position: relative;
+}
+
+/*Upcoming events section*/
+.events-section {
+    margin: 40px 20px;
+    font-family: myriad-pro, Arial;
+    color: hsl(0, 0%, 28%);
+} 
+.events-section h2 {
+    text-align: center;
+}
+.events-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.event-div {
+    flex: 1;
+    background-color: #f2f2f2;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.event-date {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 5px;
+    margin-right: 10px;
+    background: radial-gradient(100% 544.44% at 0% 7.94%,hsl(39, 96%, 62%) 0%,#d46e3e 100%);
+}
+
+/*Academic Network section*/
+.academic-section {
+    background-color: rgb(166 177 148 / 82%);
+    padding: 40px 20px;
+    color: white;
+}
+.academic-section h1 {
+    text-align: center;
+}
+.academic-section th, .academic-section td {
+    padding: 30px;
+    border-radius: 3px;
+}
+.academic-section table {
+    border-spacing: 5px;
+    text-align: center;
+    width: 100%;
+}
+.academic-section td {
+    background-color: #d8f0f0bd;
+}
+.academic-section td a {
+    color: hsl(0, 1%, 13%);
+}
+.academic-section td:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+/*goals*/
+.goals-section {
+    padding: 40px 20px;
+}
+.goals-div {
+    display: flex;
+    place-content: center;
+}
+.goals-table {
+    width: 90%;
+}
+.goals-table .goal {
+    max-width: 375px;
+    border-color: #868aca;
+    color: whitesmoke;
+    vertical-align: baseline;
+    float: left;
+    width: 100%;
+    padding: 20px 0px 10px;
+    margin: 5px 15px;
+    border: 5px solid;
+    text-align: center;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-radius: 10px 10px 50px 10px;
+    transition: all .2s ease-in-out; 
+    background: radial-gradient(100% 544.44% at 0% 7.94%,#fba543 0%,#e6700f 100%);
+}
+.goals-table th {
+    text-align: center;
+    font-size: 16px;
+}
+.goal p {
+    width: 93%;
+    height: 85px;
+    padding: 10px;
+}
+@media screen and (max-width: 564px) {
+    .goal p {
+        height: auto;
+    }
+}
+.goal:hover {
+    transform: scale(1.1); 
+}
+.read-button {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 20px;
+    display: inline-block;
+    vertical-align: top;
+    font: 700 14px/20px "FSMe Regular",Helvetica,Arial,sans-serif;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    margin: 10px;
+}
+.read-button:hover {
+    background-color: whitesmoke;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
