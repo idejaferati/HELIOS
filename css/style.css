@@ -94,7 +94,6 @@ body
     width: 100%;
 }
 .footer-div {
-    padding: 8px;
     margin: 0px auto;
     position: relative;
     background-color: rgb(244,243,239);
@@ -116,12 +115,18 @@ body
         display: contents;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .footer-div {
-        width: 413px;
+        width: 518px;
+        padding: 8px;
     }
     .footer-left-div {
         display: block;
+    }
+}
+@media screen and (max-width: 564px) {
+    .footer-div {
+        width: auto;
     }
 }
 a {
