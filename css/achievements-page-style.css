@@ -1,11 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  font-family: 'Arial';
-
-}
 .result{
     background-color:rgba(177, 177, 300, 0.5) ;
     margin-top: 60px;
