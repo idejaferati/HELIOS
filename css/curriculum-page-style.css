@@ -1,0 +1,149 @@
+.body{
+    background-color:#f2f2f2;
+    padding: 0 10px;
+    background-size: cover;
+   margin-top:70px;
+   display: flex;
+   height:2000px;
+
+}
+
+
+.wrapper{
+ width: 100%; 
+height:1500px;
+   display:block;
+   padding: 30px;
+   box-shadow: 1px 1 px 2px rgba(0,0,0,0.125);
+   opacity: 1.0;
+   font-weight: 400;
+   align-items: center;
+}
+
+
+.box1{
+float :left;
+height:530px;
+width:220px;
+background-color:#ffb3b3;
+font-size:18px;
+padding:3px 45px;
+text-align:center;
+color:white;
+font-family:Georgia;
+border-radius:10px;
+border:3px dotted white;
+margin:3% 0 0 3%;
+}
+
+.box2{
+float:right;
+height:530px;
+width:700px;
+margin:3% 5% 0 0;
+font-family:Georgia;
+}
+
+.a{
+list-style-image:url("../images/sun-icon.png");
+}
+
+.box3{
+float:left;
+height:300px;
+width:1000px;
+margin:4%;
+font-family:Georgia;
+align:left;
+}
+
+.box4{
+width:1000px;
+height:450px;
+display:inline-flex;
+float:left;
+padding:10px;
+}
+
+.box41{
+width:530px;
+height:350px;
+margin:6% 2% 0 2%;
+padding:3px 10px;
+text-align:center;
+border-radius:10px;
+word-wrap:break-text;
+background-color:#ccffcc;
+box-shadow:2px 2px #00b300;
+}
+
+.box42{
+width:530px;
+height:350px;
+margin:6% 2% 0 2%;
+padding:3px 10px;
+text-align:center;
+border-radius:10px;
+word-wrap:break-text;
+background-color:#ffcccc;
+box-shadow:2px 2px #990000;
+}
+
+.box43{
+width:530px;
+height:350px;
+margin:6% 2% 0 2%;
+padding:3px 10px;
+text-align:center;
+border-radius:10px;
+word-wrap:break-text;
+background-color:#ecb3ff;
+box-shadow:2px 2px #8600b3;
+}
+
+
+.box44{
+width:530px;
+height:410px;
+background-color:white;
+padding:3px 10px;
+margin: 0 2% 0 2%;
+text-align:center;
+border-radius:10px;
+word-wrap:break-text;
+background-color: #d9ccff;
+box-shadow:2px 2px #2d00b3;
+}
+
+
+.box45{
+width:530px;
+height:410px;
+background-color:white;
+padding:3px 10px;
+margin: 0 2% 0 2%;
+text-align:center;
+border-radius:10px;
+word-wrap:break-text;
+background-color:#ffccb3;
+box-shadow:2px 2px #b33c00;
+}
+
+
+.box46{
+width:530px;
+height:410px;
+background-color:white;
+padding:3px 10px;
+margin: 0 2% 0 2%;
+text-align:center;
+border-radius:10px;
+word-wrap:break-text;
+background-color:#ccddcc;
+box-shadow:2px 2px #476b47;
+}
+
+
+
+
+
