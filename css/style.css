@@ -49,7 +49,7 @@ body
 /*menu style*/
 .menu {
     margin: 0px auto;
-    width: 413px;
+    width: 700px;
     position: relative;
     background-color: #fff3e0;
 }
@@ -116,6 +116,12 @@ body
         display: contents;
     }
 }
+@media screen and (max-width: 500px) {
+    .footer-div {
+        width: 413px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .footer-div {
         width: 518px;
