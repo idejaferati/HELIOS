@@ -123,9 +123,13 @@ table.weekly-plan, .weekly-plan th, .weekly-plan td {
     border-style: ridge;
     border-color: rgb(250, 216, 175);
     text-align: -webkit-center;
+    padding: 2px;
 }
 .weekly-plan th:not(:nth-child(3)), .weekly-plan td:not(:nth-child(3)) {
     width: 13%;
+}
+.weekly-plan td:nth-child(4) {
+    background-color: lightgray;
 }
 table.weekly-plan {
     margin: 40px;
@@ -229,4 +233,8 @@ colgroup {
     .stepper-title {
         font-size: 0.8em;
     }
+}
+
+#place:before {
+    content: 'East Harlem';
 }

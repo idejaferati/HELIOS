@@ -33,7 +33,7 @@ section {
 
 /*Upcoming events section*/
 .events-section {
-    margin: 20px;
+    margin: 50px 20px;
     font-family: myriad-pro, Arial;
     color: hsl(0, 0%, 28%);
 } 
@@ -72,9 +72,8 @@ section {
 
 /*Academic Network section*/
 .academic-section {
-    background-color: rgb(166 177 148 / 82%);
+    background-image: url('../images/university.jpg');
     padding: 20px;
-    color: white;
 }
 .academic-section h1 {
     text-align: center;
@@ -88,8 +87,12 @@ section {
     text-align: center;
     width: 100%;
 }
+.academic-section th {
+    background: #80808094;
+    color: hsl(0deg 1% 13%);
+}
 .academic-section td {
-    background-color: #d8f0f0bd;
+    background-color: rgb(166 177 148 / 82%);
 }
 .academic-section td a {
     color: hsl(0, 1%, 13%);

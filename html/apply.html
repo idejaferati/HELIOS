@@ -11,6 +11,14 @@
          <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
          <link rel="stylesheet" href="../css/contact-page-style.css" type="text/css" media="all">
          <script src="https://kit.fontawesome.com/ecebb8f563.js" crossorigin="anonymous"></script>
+         <style>
+             #video {
+                 font-size: 13px;
+             }
+             #video-img {
+                 width: 15px;
+             }
+         </style>
     </head>
   
     <body>
@@ -71,6 +79,10 @@
                  <br>
                   <form>
                       <h2>Apply</h2>
+                      <a href="../video/autism.mp4">
+                        <img id="video-img" src="../images/video.png" alt="Video for children with autism">
+                        <span id="video">View video</span>
+                     </a>
                       <div class="inputBox">
                           <input type="text" name="" required="required">
                           <span class="Instructions">Full Name</span>
@@ -92,6 +104,9 @@
                           <textarea required="required"></textarea>
                           <span class="Instructions">Describe yourself/your child in three-six words</span>
                       </div>
+                      <div>
+                          <button type="button" id="open-dialog">Give additional information</button>
+                      </div>
                       <div class="inputBox">
                           <input type="submit" name="" value="Apply">
                           <div>Soon you will be contacted from our team</div>
@@ -107,8 +122,70 @@
           </section>
           
                    </div>
+               
+        
 
+        <div id="info-dialog" class="info-dialog">
+            <!-- Dialog content -->
+            <div class="dialog-content">
+                <span class="close">&times;</span>
+                <h4>Additional information</h4>
+                <form>
+                    <div>
+                        <div class="radiobtn-div">
+                            <p>Parent will visit the teacher:</p>
+                            <input type="radio" id="week" name="visit" value="week">
+                            <label for="week">once a week</label><br>
+                            <input type="radio" id="month" name="visit" value="month">
+                            <label for="month">once a month</label><br>
+                            <input type="radio" id="year" name="visit" value="year">
+                            <label for="year">once a year</label>    
+                        </div>
 
+                        <hr>
+
+                        <div class="checkbox-div">
+                            <p>Excursion</p>
+                            <input type="checkbox" id="excursion" name="excursion" value="accept-rules">
+                            <label for="excursion">Do you accept to let your child go to an excursion with the class?</label><br>
+                        </div>
+                    </div>
+                    <menu class="buttons">
+                        <button id="reset" type="reset">Reset</button>
+                        <button type="submit" id="save">Save</button>
+                    </menu>
+                </form>
+            </div>         
+        </div>
+            
+        <!--Script to open and close the dialog-->
+        <script>
+            var modal = document.getElementById("info-dialog");
+            var btn = document.getElementById("open-dialog");
+            var saveBtn = document.getElementById("save");
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the dialog 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            save.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            // When the user clicks on <span> (x), close the dialog
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the dialog, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
          
          <footer id="footer">
               <!--jscode-->
