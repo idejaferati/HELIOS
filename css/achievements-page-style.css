@@ -63,7 +63,7 @@
     padding: 10px;
     font-style: oblique;
     font-weight: bolder;
-    color:rgb(206, 229, 208) ;
+    color:#829180 ;
    
 }
 .people{
@@ -79,7 +79,7 @@
     border-radius: 6px;
     border-style:ridge;
     color: white;
-    
+    box-shadow: 7px 7px 2px 1px rgb(206 229 208);
 }
 .note{
     background-color:rgb(206, 229, 208) ;
