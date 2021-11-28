@@ -1,12 +1,13 @@
 
 .result{
-    background-color:rgba(177, 177, 300, 0.5) ;
+    background-color: rgb(254, 228, 100);
     margin-top: 60px;
     padding-top: 40px;
     color: white;
     width: 100%;
    text-align: center; 
    padding-right: 20px;
+   
   
    
 }
@@ -16,6 +17,10 @@
     
     
 }
+.wrapper h1{
+    color: rgb(175, 211, 178);
+}
+
 .info{
     padding: 20px;
     font-size: 20px;
@@ -23,18 +28,26 @@
     
 }
 
+
 .InternationalAchievements{
     padding:25px 10px 25px 30px;
     text-align: left;
+    background-color: white;
+    border-radius: 10px;
 }
+
 .InternationalAchievements img{
     float: right;
     border-radius: 10px;
+    z-index: 1;
 }
 .listing{
     position: relative;
     right: 2em;
     padding-left: 40px;
+    color: rgb(254, 228, 100);
+    
+    
     
     
     
@@ -43,9 +56,14 @@
 .students{
     text-align: center;
     padding: 20px;
+    
+    
 }
 .enter{
     padding: 10px;
+    font-style: oblique;
+    font-weight: bolder;
+    color:rgb(206, 229, 208) ;
    
 }
 .people{
@@ -56,18 +74,20 @@
     width: 300px;
     height: 300px;
     padding: 17px;
-    background-color: rgba(177, 177, 300, 0.5);
+    background-color: rgb(254, 228, 100);
     margin: 10px;
     border-radius: 6px;
     border-style:ridge;
+    color: white;
     
 }
 .note{
-    background-color: silver;
+    background-color:rgb(206, 229, 208) ;
     font-style: italic;
     margin: 30px;
     border-radius: 6px;
     border-style:ridge;
+    color: white;
     
 }
 

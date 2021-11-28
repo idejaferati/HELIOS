@@ -17,6 +17,7 @@ height:2200px;
    opacity: 1.0;
    font-weight: 400;
    align-items: center;
+  
 }
 
 .box2{
@@ -26,10 +27,16 @@ width:1000px;
 margin:2%;
 padding: 5px;
 font-family:Georgia;
+color:rgb(156, 180, 158);
+
 }
 
 .a{
 list-style-image:url("../images/sun-icon.png");
+color: white;
+background-color: rgb(254, 228, 100);
+padding-top: 15px;
+border-radius: 10px;
 }
 
 .box3{
@@ -38,6 +45,7 @@ height: 800px;
 width:1000px;
 margin:2%;
 font-family:Georgia;
+color:rgb(156, 180, 158);
 }
 
 .box4{
@@ -48,9 +56,12 @@ float:center;
 margin:1% 2%;
 align-items: center;
 padding:10px;
+color:rgb(156, 180, 158);
+
 }
 
 .box41{
+
 width:320px;
 height:350px;
 margin:6% 6px 0 6px;
