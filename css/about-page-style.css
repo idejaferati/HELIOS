@@ -252,3 +252,21 @@ colgroup {
 #place:before {
     content: 'East Harlem';
 }
+.school{
+    margin-left: 50px;
+    max-width: 1000px;
+    padding: 10px;
+
+}
+.photo{
+    display: inline-block;
+}
+.photo img{
+    max-width: 300px;
+    max-height: 250px;
+}
+.school p{
+    
+    text-align: center;
+    color: rgb(254, 228, 100);
+}
