@@ -28,15 +28,10 @@
     display: flex;
     gap: 1em;
     padding-bottom: 1em;
-    color: rgb(254, 228, 100);
+    color: rgb(248, 211, 30);
 } 
-.stepper-item a:visited {
-    color: rgb(254, 228, 100);
-    background-color: transparent;
-    text-decoration: none;
-}
-.stepper-item a:hover, .stepper-item a:active {
-    color: rgb(241, 212, 67);
+.stepper-item a:visited, .stepper-item a:hover, .stepper-item a:active {
+    color: rgb(248, 211, 30);
     background-color: transparent;
     text-decoration: none;
 }
@@ -54,6 +49,9 @@
 #team {
     scroll-margin-top: 150px;
 }  
+#school {
+    scroll-margin-top: 120px;
+}
 
 /*body*/
 .data-container {
@@ -77,7 +75,7 @@
 .quote-div {
     flex-basis: 28%;
     background-color:rgb(254, 228, 100) ;
-    color: white;
+    color: #649164;
     border-radius: 4px;
 }
 .quote-div q {
@@ -120,7 +118,7 @@
     background-color: white;
     padding: 10px;
     border-radius: 5px;
-    color: rgb(252, 223, 81);
+    color: rgb(248, 211, 30);
 }
 .tables-section {
     padding: 20px 40px;
