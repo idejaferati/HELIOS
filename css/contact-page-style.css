@@ -187,11 +187,12 @@ input[type="submit"]{
     background-color: rgba(0,0,0,0.4); 
   }
   .dialog-content {
-    background-color: #fefefe;
+    background-color: rgb(254, 228, 100);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
+    color: white;
   }
   .dialog-content div {
       padding: 10px;
@@ -229,10 +230,11 @@ input[type="submit"]{
       background-color: #b4b3b3;
   }
   .buttons #save {
-      background-color: green;
+      background-color:rgb(206, 229, 208) ;
   }
   .buttons #save:hover {
-      background-color: greenyellow;
+      background-color: rgb(110, 218, 200);
+      color: rgb(254, 228, 100);
   }
   #open-dialog {
       background: transparent;
