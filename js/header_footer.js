@@ -29,7 +29,7 @@ window.onload = function ()
                 <li>Contact Us:</li>
                 <li>
                     <img src="../images/location-icon.png" alt="Location"/>
-                    <address style="display:inline-block">Agim Ramadani, Prishtine 10000</address>
+                    <address style="display:inline-block">Agim Koll&ccedil;ari, Prishtin&euml; 10000</address>
                 </li>
                 <li>
                     <a href="tel:+383 45 444 444">

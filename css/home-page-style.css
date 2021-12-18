@@ -20,7 +20,7 @@
     z-index: 9;
     background-color:rgb(254, 228, 100);
     bottom: 4px;
-    color: white;
+    color: rgb(156, 175, 158);
 }
 .offers-div div {
     margin: 10px;
@@ -35,7 +35,7 @@ section {
 .events-section {
     margin: 50px 20px;
     font-family: myriad-pro, Arial;
-    color:rgb(254, 228, 100) ;
+    color:rgb(156, 175, 158);
     
 } 
 .events-section h2 {
@@ -62,7 +62,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: rgb(156, 175, 158);
     text-align: center;
     font-size: 10px;
     line-height: 1.2;
@@ -89,15 +89,15 @@ section {
     width: 100%;
 }
 .academic-section th {
-    background: rgb(254, 228, 100);
+    background: rgb(226 193 33 / 90%);
     color: hsl(0deg 0% 100%);
 }
 .academic-section td {
-    background-color:rgba(254, 228, 100,0.9) ;
+    background-color: rgb(226 193 33 / 90%);
   
 }
 .academic-section td a {
-    color: white;
+    color: rgb(90, 109, 92);
 }
 .academic-section td:hover {
     background-color: whitesmoke;
@@ -105,7 +105,7 @@ section {
     font-weight: bolder;
 }
 .academic-section a:hover{
-    color:rgb(254, 228, 100) ;
+    color:rgb(254, 228, 100);
 }
 
 /*goals*/
@@ -122,7 +122,7 @@ section {
 .goals-table .goal {
     max-width: 375px;
     border-color: #ededf0;
-    color:white;
+    color:rgb(156, 175, 158);
     vertical-align: baseline;
     float: left;
     width: 100%;
@@ -173,7 +173,7 @@ section {
     margin: 10px;
 }
 .read-button:hover {
-    background-color:rgb(254, 228, 100) ;
+    background-color:rgb(254, 228, 100);
     color:white ;
     cursor: pointer;
 }
