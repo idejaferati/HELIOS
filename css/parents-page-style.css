@@ -9,46 +9,56 @@
 
 .wrapper{
     width: 100%; 
-   height:fit-content;
-      display:block;
-      padding: 5px;
-      box-shadow: 1px 1 px 2px rgb(254, 228, 100);
-      opacity: 1.0;
-      font-weight: 400;
-      align-items: center;
-   }
+    height:fit-content;
+    display:block;
+    padding: 5px;
+    box-shadow: 1px 1 px 2px rgb(254, 228, 100);
+    opacity: 1.0;
+    font-weight: 400;
+    align-items: center;
+}
 
-   .title{
-       text-align: center;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-       margin-bottom: 50px;
-       color:#829180;
-       line-height: 3px;
-   }
+.title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    color:#829180;
+    line-height: 3px;
+}
 
-   .box{
+.box{
     height:auto;
     width: 92%;
     background-color:rgba(254,228,100, 69%);
     font-size:18px;
     padding:3px 45px;
     text-align:center;
-    color:white;
+    color:#829180;
     font-family:Georgia;
     border-radius:30px; 
     margin-bottom: 50px;
     box-shadow: 7px 7px 2px 1px rgb(206 229 208);
-   }
-   .text{
+}
+.text{
     font-size: 30px;
     color: #829180;
-    margin-top: 133px;
     margin-left: 60px;
-   }
-   .parent-pic{
+}
+.parent-pic{
     float: right;
     margin-right: 75px;
     border-radius: 35px;
     box-shadow: 7px 7px 2px 1px rgb(206 229 208);
-    
-   }
+}
+mark {
+    background-color: rgba(167, 167, 158, 0.445);
+    color: black;
+}
+.star-img {
+    background-image: url('../images/sun-icon.png');
+    background-attachment: fixed;
+    height: 15px;
+    width: 15px;
+    margin-top: 123px;
+    margin-left: 60px;
+}
