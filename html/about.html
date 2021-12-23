@@ -67,10 +67,42 @@
                               <div class="intro-div" id="introduction">
                                    <h1 style="color: rgb(206, 229, 208);">About us</h1>
                                    <p style="color: rgb(248, 211, 30);">
-                                        Helios Autism School opened its doors in 2017 in <span id="place"></span>. We expanded our footprint with a second school in Fall 2017 in NYC.
+                                        Helios Autism School opened its doors in 2017 in <span id="place"></span>. We expanded our footprint with a second school in Fall 2017 in 
+                                        <script>
+                                             function Place(first, second, third) {
+                                                 this.firstPart = first;
+                                                 this.secondPart = second;
+                                                 this.thirdPart = third;
+                                             }
+                                             Place.prototype.name = function() { 
+                                                  return(this.firstPart + this.secondPart + this.thirdPart);
+                                             };
+                                             
+                                             var place = new Place("N", "Y", "C");
+                                             document.write(place.name() + ".");  
+                                        </script>
                                         Our curriculum is a customizable educational tool that adapts to the various abilities of each student. It incorporates visual cues and teaching based on applied behavior analysis to facilitate the learning capability of our children and thus enhance results.
                                         <br>
                                         In addition all students are assessed and screened with the <span class="txt-format">brigance</span> instructional tool to ensure our team of teachers and therapist have a full vision of the needs of our students.
+                                        <script>
+                                             c = "a full vision of the needs of our students.";   
+                                             d = c.match(/students/gi);   
+                                             document.write(d + ".");  
+                                        </script>
+                                        <br>
+                                        Out school is ranked with 
+                                        <script>
+                                             let num = 50.5;
+                                             let n = num.toExponential();
+                                             document.write(n.toString());
+                                        </script>
+                                        points according to their performance across a set of widely accepted indicators of excellence (overall score is 
+                                        <script>
+                                             let num = 150.578;
+                                             let n = num.toFixed();
+                                             document.write(n.toString());
+                                        </script>
+                                        ).
                                    </p>
                                    <ul id="square-ul">
                                         <li>Meet IDEA requirements and address state standards and the Common Core</li>
