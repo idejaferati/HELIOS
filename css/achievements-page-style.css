@@ -12,12 +12,16 @@
 }
 .wrapper h1{
     color: rgb(175, 211, 178);
+    text-shadow: 2px 2px whitesmoke;
+  transform: rotateX(30deg);
+
 }
 
 .info{
     padding: 20px;
     font-size: 20px;
     display: inline-block; 
+   
 }
 
 .InternationalAchievements{

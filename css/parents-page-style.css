@@ -52,6 +52,8 @@
     margin-right: 75px;
     border-radius: 35px;
     box-shadow: 7px 7px 2px 1px rgb(206 229 208);
+    transform: skew(-2deg, 0);
+   
 }
 mark {
     background-color: rgba(167, 167, 158, 0.445);
@@ -70,6 +72,7 @@ mark {
     padding: .3rem;
     background-color: #eee;
     font: 1rem 'Fira Sans', sans-serif;
+ 
 }
 
 .photos> h1,
@@ -82,6 +85,7 @@ mark {
 .happyparent1 {
     background: right/contain content-box border-box no-repeat
         url('../images/person.png') white;
+      
 }
 
 .happyparent1 > h2,
