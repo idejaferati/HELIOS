@@ -73,16 +73,16 @@
                     </div>
                     <div class="box">
                          <p>
-                              " Words can't express how overjoyed I am with having my child in Helios! After all the research I 
-                              did prior to putting him in the school, it felt as if it were too good to be 
-                              <script>
-                                   document.write((Number.MAX_VALUE < Number.POSITIVE_INFINITY) + "!")
-                              </script> 
-                              But it's not! Everyday he goes to school in Helios is a blessing. this school has filled our hearts with hope!
-                              you will find that everyone in Helios is ther because it's their passion in wanting to make a 
-                              difference! And they have, in our lives! I will be forever grateful for this gem of a school, or how they say
-                              in my mothertoungue: 
-                              <span id="exec" onpointerover="execFn()">DO T&Euml; JEM &Ccedil;DOHER&Euml; MIR&Euml;NJOH&Euml;SE&#33;</span> "  
+                         " Words can't express how overjoyed I am with having my child in Helios! After all the research I 
+                         did prior to putting him in the school, it felt as if it were too good to be 
+                         <script>
+                              document.write((Number.MAX_VALUE < Number.POSITIVE_INFINITY) + "!")
+                         </script> 
+                         But it's not! Everyday he goes to school in Helios is a blessing. this school has filled our hearts with hope!
+                         you will find that everyone in Helios is ther because it's their passion in wanting to make a 
+                         difference! And they have, in our lives! I will be forever grateful for this gem of a school, or how they say
+                         in my mothertoungue: 
+                         <span id="exec" onpointerover="execFn()">DO T&Euml; JEM &Ccedil;DOHER&Euml; MIR&Euml;NJOH&Euml;SE&#33;</span> "  
                          </p>
                          <p align="right"> - <span id="parent4"></span></p>
                     </div>
@@ -113,7 +113,6 @@
                               return this.name + " " + this.surname;
                            }
                          }
-
                          Parent.prototype.middleName = "Joe";
 
                          const parent1 = new Parent("Theo", "Watts");
@@ -157,9 +156,10 @@
      function testFn(){
           const greenColor = "#00FF00";
           const redColor = "#FF0000";
+          var boolVal = true;
           var example = document.getElementById("test").textContent;
           var pattern = new RegExp("child");
-          switch(pattern.test(example)) {
+          switch(pattern.test(example) && boolVal) {
                case true: document.getElementById("test").style.borderBottomColor = greenColor; break;
                case false: document.getElementById("test").style.borderBottomColor = redColor; break;
           }

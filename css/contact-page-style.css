@@ -121,7 +121,7 @@ i{
     transition: 0.5s;
     color:rgb(160, 163, 161);
 }
-input:focus~span, input:valid~span, textarea:focus~span {
+input:focus~span, input:valid~span, textarea:focus~span, textarea:valid~span {
     color: rgb(254, 228, 100);
     font-size: 12px;
     transform: translateY(-20px);
@@ -134,6 +134,12 @@ input[type="submit"]{
     padding: 10px;
     font-size: 18px;
     color: white;
+}
+input[type="date"] {
+    color: transparent;
+}
+input[type="date"]:focus, input[type="date"]:valid {
+    color: gray;
 }
 .map{
     color: white;

@@ -44,7 +44,12 @@
                          <p>Graduates</p>
                     </div>
                     <div class="info">
-                         <h1>28</h1>
+                         <h1>
+                              <script>
+                                   var nr = Math.max(28, 10, 4, 2, 6, -20);
+                                   document.write(nr);
+                              </script>
+                         </h1>
                          <p>Award Winning</p>
                     </div>
                     <div class="info">
@@ -94,7 +99,16 @@
                     </ul>
                </div>
           </div>
-          <hr>
+
+          <canvas id="canvas"></canvas>
+          <script>
+               var c = document.getElementById("canvas");
+               var ctx = c.getContext("2d");
+               ctx.moveTo(0,0);
+               ctx.lineTo(1200,0);
+               ctx.stroke();
+          </script>
+
           <div class="students">
                <div class="enter">
                     <h2 style="color:rgb(254, 228, 100) ;">Students</h2>
