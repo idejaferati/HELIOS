@@ -203,15 +203,23 @@
                 </button>
             </div>
         </div>
+
+        <div class="video-div">
+            <video width="40%" controls>
+                <source src="../video/autism.mp4" type="video/mp4">
+           </video>
+        </div>
+
         <div>
-            <fieldset><legend>Do a bit of math</legend>
-             <p>Add the number of our campuses with 1300 students for each</p>
-       <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
-        <input type="range" id="a" value="5" disabled >
-        *<input type="number" id="b" value="25" max="1300" placeholder="1300" >
-        =<output name="x" for="a b"></output><p>Students in total</p>
-       </fieldset>
-        </form>
+            <fieldset>
+                <legend>Do a bit of math</legend>
+                <p>Add the number of our campuses with 1300 students for each</p>
+                <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+                        <input type="range" id="a" value="5" disabled >
+                        *<input type="number" id="b" value="25" max="1300" placeholder="1300" >
+                        =<output name="x" for="a b"></output><p>Students in total</p>
+                </form>
+            </fieldset>
         </div>
         <hr>
         <footer id="footer">

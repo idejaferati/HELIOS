@@ -127,6 +127,9 @@
                               <br>  The primary mission of Helios is to provide individualized research verified education services to children with autism.
                                    It is our commitment to provide outstanding academic, vocational, and functional life programs.
                               </p>
+                              <div class="center-div">
+                                   <audio src="../audio/Autism.mp3" controls></audio>
+                              </div>
                               <table class="weekly-plan">
                                    <caption><b>Weekly plan</b></caption>
                                    <colgroup>
@@ -144,11 +147,19 @@
                                         <td>Monday</td>
                                         <td>08:00AM</td>
                                         <td>
-                                             <ol>
-                                                  <li>Playing with cards</li>
-                                                  <li>Painting</li>
-                                                  <li>Socializing with others</li>
-                                             </ol>
+                                             <script>
+                                                  var duties, list;
+                                                  duties = new Array("Playing with cards", "Painting", "Socializing with others");
+                                  
+                                                  list = "<ol>";
+                                                  var i = 0;
+                                                  while (i < duties.length) {
+                                                       list += "<li>" + duties[i] + "</li>";
+                                                       i++;
+                                                  }
+                                                  list += "</ol>";
+                                                  document.write(list);
+                                             </script>
                                         </td>
                                         <td>4</td>
                                    </tr>

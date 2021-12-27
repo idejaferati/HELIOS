@@ -73,7 +73,7 @@
                                 <span class="Instructions">Full Name</span>
                             </div>
                             <div class="inputBox">
-                                <input id="email" type="email" name="" required="required" onchange="validateEmail()">
+                                <input id="email" type="email" name="" autocomplete="on" required="required" onchange="validateEmail()">
                                 <span class="Instructions">Email</span>
                             </div>
                             <div class="inputBox">
@@ -81,18 +81,19 @@
                                 <span class="Instructions">Amount of money you donated</span>
                             </div>
                             <label for="city" style="color: gray;">City:</label>
-  <input list="cities" name="city" id="city">
-  <datalist id="cities">
-    <option value="Prishtine">
-    <option value="Gjilan">
-    <option value="Mitrovice">
-    <option value="Peje">
-    <option value="Prizeren">
-        <option value="Ferizaj">
-  </datalist>
+                            <input list="cities" name="city" id="city">
+                            <datalist id="cities">
+                                <option value="Prishtine">
+                                <option value="Gjilan">
+                                <option value="Mitrovice">
+                                <option value="Peje">
+                                <option value="Prizeren">
+                                    <option value="Ferizaj">
+                            </datalist>
                             <div class="inputBox">
                                 <input id="accountNum" type="password" name="" required="required" onchange="validateAccountNum()">
                                 <span class="Instructions">Account Number</span>
+                                <keygen name="key">
                             </div>
                             <div class="inputBox">
                                 <textarea required=""></textarea>
