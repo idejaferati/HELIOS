@@ -45,7 +45,9 @@
     font-size: 30px;
     color: #829180;
     margin-left: 60px;
-    border-bottom: 1px solid lightblue;
+    border-bottom: 1px solid #add8e6;
+    font-family: 'MyMathewFont';
+    
 }
 .parent-pic{
     float: right;
@@ -92,4 +94,13 @@ mark {
 .happyparent1 > p {
     margin: .2rem;
     font-size: 1rem;
+}
+@font-face {
+    font-family: 'MyMathewFont';
+    src: 
+         url(../fonts/mathlete-fontfacekit/) format('woff');
+       
+    font-weight: normal;
+    font-style: normal;
+
 }
