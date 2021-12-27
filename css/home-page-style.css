@@ -145,6 +145,7 @@ section {
     width: 93%;
     height: 85px;
     padding: 10px;
+   
 }
 @media screen and (max-width: 564px) {
     .goal p {
@@ -178,3 +179,6 @@ section {
     cursor: pointer;
 }
 
+
+
+  

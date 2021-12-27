@@ -84,6 +84,7 @@
    resize: both;
    overflow: auto;
    outline:5px dashed gray;
+   font-family: myFont;
 }
 
 #canvas {
