@@ -23,21 +23,21 @@
                <a href="about.html">About</a>
                <a href="curriculum.html">Curriculum</a>
                <a href="parents.html"><span class="current-page">Parents</span></a>
-               <a href="contact.html">Contact</a>
                <a href="achievements.html">Achievements</a>
+               <a href="contact.html">Contact</a>
+               
            </div>
          </nav>
          
-        <!--ADD CODE-->
 
         <div class="body">
              <div class="wrapper">
                   <div class="title">
                        <h2>A word from our parents</h2>
-                       <h6>☀️☀️☀️☀️☀️</h6>
+                       <span>☀️☀️☀️☀️☀️</span>
                   </div>
                   <div class="box">
-                       <p>
+                         <p>
                             " Helios Autism is a wonderful school that my daughter has the privilege of attending.
                             Their emphasis is always on the welfare of the child not the curriculum unlike some
                             other schools/organizations. Helios demostrates a unique understanding of this growing
@@ -45,18 +45,23 @@
                             actually make a reality instead of just talking about it. And as a parent, I can only
                             say I am thrilled that my child has the opportunity to be a part of it."
                          </p>
-                            <p align="right"> - filan fisteku</p>   
+                         <p align="right"> - <span id="parent1"></span></p>   
                   </div>
                   <div class="box">
                        <p>
-                            " I have been a parent of a Helios student for 7 years and they are continually impressing
+                            " I have been a parent of a Helios student for 
+                            <script>
+                                 let num = 7.297;  
+                                 document.write(num.toPrecision(1));
+                            </script>
+                            years and they are continually impressing
                             me every year. Their curriculum has been modified to my child's needs and has past every
                             expectation and more that i want from a school. They have been able to coordinate his 
                             therapies through out the school day which alleviate extra stress on my son and me. I look
                             forward to the many more accomplishments Helios will achieve through out my sons time at 
                             the school."
                        </p>
-                       <p align="right"> - **********</p>
+                       <p align="right"> - <span id="parent2"></span></p>
                   </div>
                   <div class="box">
                     <p>
@@ -64,45 +69,120 @@
                          every morning. I recommend this school to other parents looking for a safe and nurturing place 
                          to have their special needs."
                     </p>
-                    <p align="right"> - **********</p>
+                    <p align="right"> - <span id="parent3"></span></p>
+                    </div>
+                    <div class="box">
+                         <p>
+                         " Words can't express how overjoyed I am with having my child in Helios! After all the research I 
+                         did prior to putting him in the school, it felt as if it were too good to be 
+                         <script>
+                              document.write((Number.MAX_VALUE < Number.POSITIVE_INFINITY) + "!")
+                         </script> 
+                         But it's not! Everyday he goes to school in Helios is a blessing. this school has filled our hearts with hope!
+                         you will find that everyone in Helios is ther because it's their passion in wanting to make a 
+                         difference! And they have, in our lives! I will be forever grateful for this gem of a school, or how they say
+                         in my mothertoungue: 
+                         <span id="exec" onpointerover="execFn()">DO T&Euml; JEM &Ccedil;DOHER&Euml; MIR&Euml;NJOH&Euml;SE&#33;</span> "  
+                         </p>
+                         <p align="right"> - <span id="parent4"></span></p>
+                    </div>
+                    <div class="box">
+                         <p>
+                              " When my son has been diagnosed with autism over a year ago i had no idea what to expect or 
+                              what to do because autism was something I read about and heard about but never truly understood.
+                              And when it came to my son I wanted the best school, the best teachers and the best therapists
+                              to help him reach his highest potential - that's when I began my research. I went to visit schools 
+                              and none of them really made an impact on me, they were over crowded and I didn't feel a personal
+                              connection in any of them. Then I found Helios and right away I emailed them and asked a million 
+                              questions and <mark>Mrs.*****</mark> always replied! We set up a tour of the school and I was shown around and 
+                              when I met the principal I knew I had found the right place for my son. When she spoke to me about 
+                              the school I felt her passion behind all her words and I automatically signed him up! Words cannot 
+                              explain how grateful I am thatmy son continues to suprise me every single day and I honestly owe it
+                              to this school & its amazing staff & the amazing curriculum that engages all the children in the way
+                              that is best for them. "
+                         </p> 
+                         <p align="right"> - <span id="parent5"></span></p>
+                    </div>
+                    <script>
+                         class Parent {
+                           constructor(name, surname) {
+                             this.name = name;
+                             this.surname = surname;
+                           }
+                           fullname() {
+                              return this.name + " " + this.surname;
+                           }
+                         }
+                         Parent.prototype.middleName = "Joe";
+
+                         const parent1 = new Parent("Theo", "Watts");
+                         document.getElementById("parent1").innerHTML = parent1.name + " " + parent1.middleName + " " + parent1.surname;
+                         const parent2 = new Parent("Anna", "Hunt");
+                         document.getElementById("parent2").innerHTML = parent2.fullname();
+                         const parent3 = new Parent("Bruno", "West");
+                         document.getElementById("parent3").innerHTML = parent3.fullname();
+                         const parent4 = new Parent("Ela", "Kurti");
+                         document.getElementById("parent4").innerHTML = parent4.fullname();
+                         const parent5 = new Parent("Charlie", "Jacobs");
+                         document.getElementById("parent5").innerHTML = parent5.fullname();
+                    </script>
                </div>
-               <div class="box">
-                    <p>
-                       " Words can't express how overjoyed I am with having my child in Helios! After all the research I 
-                       did prior to putting him in the school, it felt as if it were too good to be true! But it's not!
-                       Everyday he goes to school in Helios is a blessing. this school has filled our hearts with hope!
-                       you will find that everyone in Helios is ther because it's their passion in wanting to make a 
-                       difference! And they have, in our lives! I will be firever greatfull for this gem of a school. "  
-                    </p>
-                    <p align="right"> - **********</p>
-               </div>
-               <div class="box">
-                    <p>
-                         " When my son has been diagnosed with autism over a year ago i had no idea what to expect or 
-                         what to do because autism was something I read about and heard about but never truly understood.
-                         And when it came to my son I wanted the best school, the best teachers and the best therapists
-                         to help him reach his highest potential - that's when I began my research. I went to visit schools 
-                         and none of them really made an impact on me, they were over crowded and I didn't feel a personal
-                         connection in any of them. Then I found Helios and right away I emailed them and asked a million 
-                         questions and Mrs.***** always replied! We set up a tour of the school and I was shown around and 
-                         when I met the principal I knew I had found the right place for my son. When she spoke to me about 
-                         the school I felt her passion behind all her words and I automatically signed him up! Words cannot 
-                         explain how grateful I am thatmy son continues to suprise me every single day and I honestly owe it
-                         to this school & its amazing staff & the amazing curriculum that engages all the children in the way
-                         that is best for them. "
-                    </p> 
-                    <p align="right"> - **********</p>
-               </div>
-             </div>
+          </div>
+          <figure>
+          <img src="../images/parent.jpg" class="parent-pic">
+<figcaption><h5>Helios thinks about your well being</h5></figcaption>
+          
+          <div style="height:300px">
+               <p class="star-img"></p>
+               <span class="text" id="test" onpointerover="testFn()">It's our priority to make your child feel warm </p>
+          </div>
+          </figure>
 
-        </div>
+          <hr>
 
-
-
-
+          <article class="photos">
+               <h1>Happy parents</h1>
+               <article class="happyparent1">
+                   <h2>Suzana Shala</h2>
+                   <p>The best decision I ever did was bringing my child in this school</p>
+               </article>
+               <article class="happyparent1">
+                   <h2>Aferdita Jupolli</h2>
+                   <p>My child behavior has changed a lot since she is part of this school</p>
+               </article>
+               <article class="happyparent1">
+                   <h2>Drita Ferati</h2>
+                   <p>Helios school has made my life easier. Seeing my child happy after school makes my day better.</p>
+               </article>
+          </article>
 
          <footer id="footer">
               <!--jscode-->
          </footer>
     </body>
 </html>
+<script>
+     function execFn(){
+          var example = "I will be forever grateful for this gem of a school";
+          var patt = new RegExp("grateful");
+          if (patt.exec(example) == "grateful") {
+               document.getElementById("exec").style.color="lightblue";
+          } else {
+               document.getElementById("exec").style.color="red";
+          }
+     }
+</script>
+<script>
+     function testFn(){
+          const greenColor = "#00FF00";
+          const redColor = "#FF0000";
+          var boolVal = true;
+          var example = document.getElementById("test").textContent;
+          var pattern = new RegExp("child");
+          switch(pattern.test(example) && boolVal) {
+               case true: document.getElementById("test").style.borderBottomColor = greenColor; break;
+               case false: document.getElementById("test").style.borderBottomColor = redColor; break;
+          }
+     }
+</script>
+
