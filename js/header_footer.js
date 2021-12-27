@@ -1,5 +1,8 @@
 window.onload = function ()
 {
+    let d = new Date();
+    let year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+    
     var header_content = `
     <div class="header-div">
         <a href="index.html">
@@ -22,7 +25,7 @@ window.onload = function ()
             <a href="https://www.linkedin.com/HeliosAutismSchool" target="_blank" class="margin-10">
                 <img src="../images/linkedin-icon.png" alt="Share via LinkedIn"/>
             </a>
-            <p>&copy;2021 Helios Autism School.<br> All rights reserved.</p>
+            <p>&copy;${year} Helios Autism School.<br> All rights reserved.</p>
         </div>
         <div class="footer-right-div">
             <ul>

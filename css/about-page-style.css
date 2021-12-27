@@ -30,7 +30,7 @@
     padding-bottom: 1em;
     color: rgb(248, 211, 30);
 } 
-.stepper-item a:visited, .stepper-item a:hover, .stepper-item a:active {
+.stepper-item a:visited, .stepper-item a:hover, .stepper-item a:active, .stepper-item a:link {
     color: rgb(248, 211, 30);
     background-color: transparent;
     text-decoration: none;
@@ -129,7 +129,7 @@ th {
 table.weekly-plan, .weekly-plan th, .weekly-plan td {
     border: 1px solid black;
     border-radius: 4px;
-    border-style: ridge;
+    border-style: groove;
     border-color: rgb(254, 228, 100);
     text-align: -webkit-center;
    background-color:rgba(206, 229, 208,0.5) ;
@@ -267,4 +267,12 @@ colgroup {
     
     text-align: center;
     color: rgb(254, 228, 100);
+}
+
+.txt-format {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.center-div {
+    text-align: center;
 }

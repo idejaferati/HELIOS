@@ -32,9 +32,11 @@
          </nav>
 
          <section>
+     
               <div class="main-background-div">
                    <img src="../images/school.jpg" alt="A child in school">
               </div>
+              
               <div class="offers-div">
                    <div>
                         <h3><abbr title="Helios Autism School">HAS</abbr> Trainings</h3>
@@ -55,9 +57,29 @@
                           </p>
                     </div>
               </div>
-         </section>
+          </section>
+          <div style="text-align: center;">
+          <p>Welcome to our website</p>
+          <canvas id="gradient-canvas"></canvas>
+          <script>
+               var x = document.getElementById("gradient-canvas");
+               var ctx = x.getContext("2d");
+               var y = ctx.createRadialGradient(75,50,5,90,60,100);
+               y.addColorStop(0,"yellow");
+               y.addColorStop(1,"white");
+               ctx.fillStyle = y;
+               ctx.fillRect(10,10,220,220);
+          </script>
+          <audio src="../audio/welcomeaudio.html.mp3"  controls></audio>
+          <br>
+          <p>What is Autism?</p>
+          
+          <video width="100%" controls>
+               <source src="../video/What is Autism _ Quick Learner.mp4" type="video/mp4">
+          </video>
 
-         <section class="events-section">
+
+          <section class="events-section">
                <h2>Upcoming Events</h2>
                <div class="events-container">
                     <div class="event-div">
@@ -177,8 +199,31 @@
                     </table>
              </div>
          </section>
-         
+         <div class="autisticpeople">
+              <h4 style="color: rgb(254, 228, 100); text-align: center;">We see geometric objects, autistic people see art</h4>
+          <svg width="400" height="110">
+               <rect width="300" height="100" style="fill:rgb(236, 233, 39);stroke-width:3;stroke:rgb(169, 150, 214)" />
+          </svg>
+          <svg height="110" width="110">
+               <circle cx="60" cy="60" r="40" stroke="black" stroke-width="3" fill="red" />
+          </svg>
+          <svg height="150" width="350">
+               <polygon points="180,10 230,140 140,110" style="fill:lime;stroke:purple;stroke-width:1" />
+          </svg>
+          <svg height="140" width="300">
+               <ellipse cx="200" cy="80" rx="100" ry="50" style="fill:yellow;stroke:purple;stroke-width:2" />
+          </svg>
+         </div>
+         <img id="sun" src="../images/sun-icon.png" alt="sun" width="30" height="30" style="display:none;">
+         <canvas id="img-canvas" width="30" height="30"></canvas>
+         <script>
+               var c = document.getElementById("img-canvas");
+               var ctx = c.getContext("2d");
+               var img = document.getElementById("sun");
+               ctx.drawImage(img,10,10);
+          </script>
          <hr>
+        
          <footer id="footer">
               <!--jscode-->
          </footer>

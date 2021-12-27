@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link rel="icon" href="../images/autism.png"/>
         <script src="../js/header_footer.js"></script>
+        <script src="../js/validators.js"></script>
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="../css/contact-page-style.css" type="text/css" media="all">
         <script src="https://kit.fontawesome.com/ecebb8f563.js" crossorigin="anonymous"></script>
@@ -82,19 +83,19 @@
                             <span id="video">View video</span>
                         </a>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input id="fullName" type="text" name="" required="required" onchange="validateFullName()" autofocus>
                             <span class="Instructions">Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="date" name=""  style="color: transparent;" required="required">
+                            <input type="date" name="" required="required">
                             <span class="Instructions">Birthday</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input id="email" type="email" name="" autocomplete="on" required="required" onchange="validateEmail()">
                             <span class="Instructions">Email</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input id="phone" type="tel" name="" required="required" onchange="validatePhoneNum()" multiple>
                             <span class="Instructions">Phone Number</span>
                         </div>
                         <div class="inputBox">

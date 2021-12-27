@@ -42,14 +42,14 @@
             <div class="wrapper">
                 <div class="box2">
                     <h1 align="center" style=" color:rgb(254, 228, 100) ;">Curriculum</h1>
-                    <p>
-                        The ultimate goal and purpose at Helios is to prepare its student population to emerge as independently as possible 
-                        to meet the challenges of community life. Our curriculum is a customizable educational tool that adapts to the various 
+                    <p id="textForSchool" onmouseover="regexReplace()">
+                        The ultimate goal and purpose at HAS is to prepare its student population to emerge as independently as possible 
+                        to meet the challenges of community life. Our curriculum at HAS is a customizable educational tool that adapts to the various 
                         abilities of each student. It incorporates visual cues and teaching based on applied behavior analysis to facilitate the 
                         learning capability of our children and thus enhance results.
                     </p>
                     <p>
-                        Helios also offers enrichment programs in order to supplement the educational process. 
+                        Helios also offers enrichment programs in order to supplement the educational process.
                         These activities enhance learning and have been proven to assist children with Autism to learn to self regulate, 
                         engage in relaxation techniques, exhaust energy, concentrate, and many more areas that facilitate learning.
                     </p>
@@ -65,6 +65,15 @@
                         <li>Art therapy, dance and sports</li>
                     </ul>
                 </div>
+                <script>
+                    var text = document.getElementById('textForSchool').textContent;
+                    
+                    var result = text.replace(/HAS/g, "Helios School");
+        
+                    function regexReplace() {
+                        document.getElementById('textForSchool').innerHTML = result;
+                    }
+                </script>
                 <div class="box3">
                     <p>
                          <h3 align="center" style=" color:rgb(254, 228, 100) ;" bold> What are educational standards? </h3>
@@ -88,7 +97,7 @@
                         <br>
                         <li>
                             Mathematics 
-                            <ul> <br>At Helios, pupils are encouraged to develop fluency in the four mathematical operations through practice and repetition,
+                            <ul> <br>At Helios School, pupils are encouraged to develop fluency in the four mathematical operations through practice and repetition,
                                 as well as, knowing the general principles of shapes, space and data, order of operation and algebra.
                             </ul>
                         </li>
@@ -193,6 +202,24 @@
                     <i class="fas fa-print"></i>
                 </button>
             </div>
+        </div>
+
+        <div class="video-div">
+            <video width="40%" controls>
+                <source src="../video/autism.mp4" type="video/mp4">
+           </video>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Do a bit of math</legend>
+                <p>Add the number of our campuses with 1300 students for each</p>
+                <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+                        <input type="range" id="a" value="5" disabled >
+                        *<input type="number" id="b" value="25" max="1300" placeholder="1300" >
+                        =<output name="x" for="a b"></output><p>Students in total</p>
+                </form>
+            </fieldset>
         </div>
         <hr>
         <footer id="footer">

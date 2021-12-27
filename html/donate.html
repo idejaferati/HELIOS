@@ -8,9 +8,25 @@
         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link rel="icon" href="../images/autism.png"/>
         <script src="../js/header_footer.js"></script>
+        <script src="../js/validators.js"></script>
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="../css/contact-page-style.css" type="text/css" media="all">
         <script src="https://kit.fontawesome.com/ecebb8f563.js" crossorigin="anonymous"></script>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+            
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
     </head>
     <body>
         <header id="header">
@@ -68,24 +84,43 @@
                             <br>
                             <h2>Donate</h2>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input id="fullName" type="text" name="" required="required" onchange="validateFullName()" autofocus>
                                 <span class="Instructions">Full Name</span>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input id="email" type="email" name="" autocomplete="on" required="required" onchange="validateEmail()">
                                 <span class="Instructions">Email</span>
                             </div>
                             <div class="inputBox">
                                 <input type="number" name="" required="required">
                                 <span class="Instructions">Amount of money you donated</span>
                             </div>
+                            <label for="city" style="color: gray;">City:</label>
+                            <input list="cities" name="city" id="city">
+                            <datalist id="cities">
+                                <option value="Prishtine">
+                                <option value="Gjilan">
+                                <option value="Mitrovice">
+                                <option value="Peje">
+                                <option value="Prizeren">
+                                    <option value="Ferizaj">
+                            </datalist>
                             <div class="inputBox">
-                                <input type="password" name="" required="required">
+                                <input id="accountNum" type="password" name="" required="required" onchange="validateAccountNum()">
                                 <span class="Instructions">Account Number</span>
+                                <keygen name="key">
                             </div>
                             <div class="inputBox">
                                 <textarea required=""></textarea>
                                 <span class="Instructions">Leave a message</span>
+                            </div>
+                            <h5 style="color: rgb(112, 112, 112);">Are you a robot?</h5>
+                            <h6 style="color: rgb(148, 148, 147);">-To verify that you're a human please drag and drop the picture in it's place!</h6>
+                            <div class="dragdrop-div">
+                                <div id="div1" style="margin-left:8%;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <img id="drag1" src="../images/university.jpg" draggable="true" ondragstart="drag(event)">
+                                </div>
+                                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                             </div>
                             <div class="inputBox">
                                 <input type="submit" name="" value="Send">

@@ -1,17 +1,19 @@
 .result{
-    background-color: rgb(254, 228, 100);
-    margin-top: 60px;
+    background:linear-gradient(  rgb(254, 228, 100), rgb(113, 113, 175) );
+     margin-top: 60px;
     padding-top: 40px;
     color: white;
     width: 100%;
     text-align: center;  
 }
-
 .wrapper{
     padding: 25px;   
 }
 .wrapper h1{
     color: rgb(175, 211, 178);
+    text-shadow: 2px 2px whitesmoke;
+  transform: rotateX(30deg);
+
 }
 
 .info{
@@ -46,7 +48,7 @@
     padding: 10px;
     font-style: oblique;
     font-weight: bolder;
-    color:#829180 ;
+    color:#f2f7f1 ;
 }
 .person{
     display: inline-block;
@@ -59,12 +61,43 @@
     border-style:ridge;
     color: white;
     box-shadow: 7px 7px 2px 1px rgb(206 229 208);
+    outline-style:outset ;
+    outline-color: aquamarine;
+    outline-width: 3px;
 }
 .note{
     background-color:rgb(206, 229, 208) ;
     font-style: italic;
     margin: 30px;
     border-radius: 6px;
-    border-style:ridge;
+    border-style:outset;
     color: rgb(156, 175, 158);   
+
+ 
 }
+.b{
+    word-wrap: break-word;
+    width: 300px;
+    background-color: rgba(9, 80, 53, 0.164);
+   resize: both;
+   overflow: auto;
+   outline:5px dashed gray;
+   font-family: myFont;
+   animation-name: move;
+   animation-duration: 8s;
+
+}
+
+#canvas {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(9, 80, 53, 0.164);
+}
+@keyframes move {
+    from {transform:translateX(0)}
+    to {transform: translateX(1500px)}
+  }
+  .vision3{
+      column-count: 3;
+     column-gap: 50px;
+  }

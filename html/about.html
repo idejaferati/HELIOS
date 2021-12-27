@@ -67,15 +67,54 @@
                               <div class="intro-div" id="introduction">
                                    <h1 style="color: rgb(206, 229, 208);">About us</h1>
                                    <p style="color: rgb(248, 211, 30);">
-                                        Helios Autism School opened its doors in 2017 in <span id="place"></span>. We expanded our footprint with a second school in Fall 2017 in NYC.
+                                        Helios Autism School opened its doors in 2017 in <span id="place"></span>. We expanded our footprint with a second school in Fall 2017 in 
+                                        <script>
+                                             function Place(first, second, third) {
+                                                 this.firstPart = first;
+                                                 this.secondPart = second;
+                                                 this.thirdPart = third;
+                                             }
+                                             Place.prototype.name = function() { 
+                                                  return(this.firstPart + this.secondPart + this.thirdPart);
+                                             };
+                                             
+                                             var place = new Place("N", "Y", "C");
+                                             document.write(place.name() + ".");  
+                                        </script>
                                         Our curriculum is a customizable educational tool that adapts to the various abilities of each student. It incorporates visual cues and teaching based on applied behavior analysis to facilitate the learning capability of our children and thus enhance results.
                                         <br>
-                                        In addition all students are assessed and screened with the BRIGANCE instructional tool to ensure our team of teachers and therapist have a full vision of the needs of our students.
+                                        In addition all students are assessed and screened with the <span class="txt-format">brigance</span> instructional tool to ensure our team of teachers and therapist have a full vision of the needs of our students.
+                                        <script>
+                                             c = "a full vision of the needs of our students.";   
+                                             d = c.match(/students/gi);   
+                                             document.write(d + ".");  
+                                        </script>
+                                        <br>
+                                        Out school is ranked with 
+                                        <script>
+                                             let num = Math.abs(-50.5);
+                                             let n = num.toExponential();
+                                             document.write(n.toString());
+                                        </script>
+                                        points according to their performance across a set of widely accepted indicators of excellence (overall score is 
+                                        <script>
+                                             let number = (Math.LOG2E + Math.E + Math.pow(Math.LN10, 3) - (Math.sqrt(100) / Math.PI)) * 10;
+                                             let nr = number.toFixed();
+                                             document.write(nr.toString() + ").");
+                                        </script>
                                    </p>
-                                   <ul id="square-ul">
-                                        <li>Meet IDEA requirements and address state standards and the Common Core</li>
-                                        <li>Monitor student progress and aggregate results across classes, schools, and therapies</li>
-                                   </ul>
+                                   <script>
+                                        var duties, list;
+                                        duties = new Array("Meet IDEA requirements and address state standards and the Common Core", 
+                                             "Monitor student progress and aggregate results across classes, schools, and therapies");
+                        
+                                        list = "<ul id='square-ul'>";
+                                        for (var i = 0; i < duties.length; i++) {
+                                            list += "<li>" + duties[i] + "</li>";
+                                        }
+                                        list += "</ul>";
+                                        document.write(list);
+                                   </script>
                               </div>
                          </div>
                     </section>
@@ -88,6 +127,9 @@
                               <br>  The primary mission of Helios is to provide individualized research verified education services to children with autism.
                                    It is our commitment to provide outstanding academic, vocational, and functional life programs.
                               </p>
+                              <div class="center-div">
+                                   <audio src="../audio/Autism.mp3" controls></audio>
+                              </div>
                               <table class="weekly-plan">
                                    <caption><b>Weekly plan</b></caption>
                                    <colgroup>
@@ -105,11 +147,19 @@
                                         <td>Monday</td>
                                         <td>08:00AM</td>
                                         <td>
-                                             <ol>
-                                                  <li>Playing with cards</li>
-                                                  <li>Painting</li>
-                                                  <li>Socializing with others</li>
-                                             </ol>
+                                             <script>
+                                                  var duties, list;
+                                                  duties = new Array("Playing with cards", "Painting", "Socializing with others");
+                                  
+                                                  list = "<ol>";
+                                                  var i = 0;
+                                                  while (i < duties.length) {
+                                                       list += "<li>" + duties[i] + "</li>";
+                                                       i++;
+                                                  }
+                                                  list += "</ol>";
+                                                  document.write(list);
+                                             </script>
                                         </td>
                                         <td>4</td>
                                    </tr>
@@ -220,6 +270,9 @@
                     </section>
                </div>
          </div>
+      
+          
+
 
          <hr>
 

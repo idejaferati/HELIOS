@@ -73,7 +73,10 @@ section {
 
 /*Academic Network section*/
 .academic-section {
-    background-image: url('../images/ambient.jpg');
+    background-image: url('../images/ambient.jpg'), url('../images/sun-icon.png');
+    background-position: right bottom, left top;
+    background-size: 99%, 1%;
+    background-repeat: no-repeat, no-repeat;
     padding: 20px;
 }
 .academic-section h1 {
@@ -145,6 +148,7 @@ section {
     width: 93%;
     height: 85px;
     padding: 10px;
+   
 }
 @media screen and (max-width: 564px) {
     .goal p {
@@ -177,4 +181,17 @@ section {
     color:white ;
     cursor: pointer;
 }
+#gradient-canvas {
+    float: left;
+    width: 116px;
+    display: table-row;
+    opacity: 0.2;
+    position: absolute;
+    border: 1px solid #f1f1f1;
+}
+#img-canvas {
+    position: absolute;
+    bottom: 235px;
+}
 
+  

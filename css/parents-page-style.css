@@ -1,5 +1,6 @@
 .body{
     background-color:#f2f2f2;
+
     padding: 0 10px;
     background-size: contain;
    margin-top:70px;
@@ -30,6 +31,7 @@
     height:auto;
     width: 92%;
     background-color:rgba(254,228,100, 69%);
+    background-origin:padding-box;
     font-size:18px;
     padding:3px 45px;
     text-align:center;
@@ -43,12 +45,21 @@
     font-size: 30px;
     color: #829180;
     margin-left: 60px;
+    border-bottom: 1px solid #add8e6;
+    font-family: 'MyMathewFont';
+    
 }
 .parent-pic{
     float: right;
     margin-right: 75px;
     border-radius: 35px;
     box-shadow: 7px 7px 2px 1px rgb(206 229 208);
+    transform: skew(-2deg, 0);
+   
+}
+mark {
+    background-color: rgba(167, 167, 158, 0.445);
+    color: black;
 }
 .star-img {
     background-image: url('../images/sun-icon.png');
@@ -57,4 +68,39 @@
     width: 15px;
     margin-top: 123px;
     margin-left: 60px;
+}
+.photos {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+ 
+}
+
+.photos> h1,
+.happyparent1 {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.happyparent1 {
+    background: right/contain content-box border-box no-repeat
+        url('../images/person.png') white;
+      
+}
+
+.happyparent1 > h2,
+.happyparent1 > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+@font-face {
+    font-family: 'MyMathewFont';
+    src: 
+         url(../fonts/mathlete-fontfacekit/) format('woff');
+       
+    font-weight: normal;
+    font-style: normal;
+
 }
