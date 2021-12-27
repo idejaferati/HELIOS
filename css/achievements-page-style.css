@@ -85,6 +85,9 @@
    overflow: auto;
    outline:5px dashed gray;
    font-family: myFont;
+   animation-name: move;
+   animation-duration: 8s;
+
 }
 
 #canvas {
@@ -92,3 +95,7 @@
     height: 3px;
     background-color: rgba(9, 80, 53, 0.164);
 }
+@keyframes move {
+    from {transform:translateX(0)}
+    to {transform: translateX(1500px)}
+  }
