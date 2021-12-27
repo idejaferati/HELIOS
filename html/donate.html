@@ -69,7 +69,7 @@
                             <br>
                             <h2>Donate</h2>
                             <div class="inputBox">
-                                <input id="fullName" type="text" name="" required="required" onchange="validateFullName()">
+                                <input id="fullName" type="text" name="" required="required" onchange="validateFullName()" autofocus>
                                 <span class="Instructions">Full Name</span>
                             </div>
                             <div class="inputBox">
@@ -80,6 +80,16 @@
                                 <input type="number" name="" required="required">
                                 <span class="Instructions">Amount of money you donated</span>
                             </div>
+                            <label for="city" style="color: gray;">City:</label>
+  <input list="cities" name="city" id="city">
+  <datalist id="cities">
+    <option value="Prishtine">
+    <option value="Gjilan">
+    <option value="Mitrovice">
+    <option value="Peje">
+    <option value="Prizeren">
+        <option value="Ferizaj">
+  </datalist>
                             <div class="inputBox">
                                 <input id="accountNum" type="password" name="" required="required" onchange="validateAccountNum()">
                                 <span class="Instructions">Account Number</span>

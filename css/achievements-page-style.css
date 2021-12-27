@@ -74,7 +74,18 @@
     border-radius: 6px;
     border-style:outset;
     color: rgb(156, 175, 158);   
+
+ 
 }
+.b{
+    word-wrap: break-word;
+    width: 300px;
+    background-color: rgba(9, 80, 53, 0.164);
+   resize: both;
+   overflow: auto;
+   outline:5px dashed gray;
+}
+
 #canvas {
     width: 100%;
     height: 3px;

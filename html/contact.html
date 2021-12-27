@@ -74,12 +74,16 @@
                         name="EmailForm">
                         <h2>Send Message</h2>
                         <div class="inputBox">
-                            <input id="fullName" type="text" name="" required="required" onchange="validateFullName()">
+                            <input id="fullName" type="text" name="" required="required" onchange="validateFullName()" autofocus>
                             <span class="Instructions">Full Name</span>
                         </div>
                         <div class="inputBox">
                             <input id="email" type="email" name="" required="required" onchange="validateEmail()">
                             <span class="Instructions">Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input id="country_code" type="text" name="" required="required" pattern="[A-Za-a]{3}">
+                            <span class="Instructions">Country code</span>
                         </div>
                         <div class="inputBox">
                             <textarea required="required"></textarea>
@@ -101,5 +105,6 @@
         <footer id="footer">
             <!--jscode-->
         </footer>
+        
     </body>
 </html>
