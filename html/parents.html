@@ -129,13 +129,13 @@
                </div>
           </div>
           <figure>
-          <img src="../images/parent.jpg" class="parent-pic">
-<figcaption><h5>Helios thinks about your well being</h5></figcaption>
-          
-          <div style="height:300px">
-               <p class="star-img"></p>
-               <span class="text" id="test" onpointerover="testFn()">It's our priority to make your child feel warm </p>
-          </div>
+               <img src="../images/parent.jpg" class="parent-pic">
+               <figcaption><h5>Helios thinks about your well being</h5></figcaption>
+               
+               <div style="height:300px">
+                    <p class="star-img"></p>
+                    <span class="text" id="test" onpointerover="testFn()">It's our priority to make your child feel warm </span>
+               </div>
           </figure>
 
           <hr>
@@ -162,20 +162,20 @@
     </body>
 </html>
 <script>
+     var redColor = "#FF0000";
      function execFn(){
           var example = "I will be forever grateful for this gem of a school";
           var patt = new RegExp("grateful");
           if (patt.exec(example) == "grateful") {
                document.getElementById("exec").style.color="lightblue";
           } else {
-               document.getElementById("exec").style.color="red";
+               document.getElementById("exec").style.color=redColor;
           }
      }
 </script>
 <script>
      function testFn(){
           const greenColor = "#00FF00";
-          const redColor = "#FF0000";
           var boolVal = true;
           var example = document.getElementById("test").textContent;
           var pattern = new RegExp("child");
