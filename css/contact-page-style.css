@@ -232,3 +232,20 @@ input[type="date"]:focus, input[type="date"]:valid {
     background: transparent;
     cursor: pointer;
 }
+/*drag and drop*/
+#div1, #div2 {
+    background-color: rgb(223, 194, 67);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid rgb(66, 43, 43);
+    margin-top:3%;
+}
+#div1 img, #div2 img {
+    width: 98px;
+    height: 98px;
+}
+.dragdrop-div {
+    display: flex;
+}
