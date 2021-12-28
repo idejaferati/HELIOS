@@ -13,7 +13,7 @@
     height:fit-content;
     display:block;
     padding: 5px;
-    box-shadow: 1px 1 px 2px rgb(247, 211, 36);
+    box-shadow: 1px 1 px 2px rgb(241, 138, 210);
     opacity: 1.0;
     font-weight: 400;
     align-items: center;
@@ -23,29 +23,29 @@
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 50px;
-    color:#829180;
+    color:rgb(121, 43, 131);
     line-height: 3px;
 }
 
 .box{
     height:auto;
     width: 92%;
-    background-color:rgba(248, 221, 88, 0.69);
+    background-color:rgba(253, 167, 239, 0.69);
     background-origin:padding-box;
     font-size:18px;
     padding:3px 45px;
     text-align:center;
-    color:#829180;
+    color:rgb(121, 43, 131);
     font-family:Georgia;
     border-radius:30px; 
     margin-bottom: 50px;
-    box-shadow: 7px 7px 2px 1px rgb(206 229 208);
+    box-shadow: 7px 7px 2px 1px rgb(245, 210, 238);
 }
 .text{
     font-size: 30px;
-    color: #829180;
+    color:rgb(121, 43, 131);
     margin-left: 60px;
-    border-bottom: 1px solid #add8e6;
+    border-bottom: 1px solid #ebc3e2;
     font-family: 'MyMathewFont';
     
 }
@@ -53,7 +53,7 @@
     float: right;
     margin-right: 75px;
     border-radius: 35px;
-    box-shadow: 7px 7px 2px 1px rgb(206 229 208);
+    box-shadow: 7px 7px 2px 1px rgb(245, 210, 238);
     transform: skew(-2deg, 0);
    
 }

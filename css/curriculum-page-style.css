@@ -25,13 +25,13 @@
    margin:2%;
    padding: 5px;
    font-family:Georgia;
-   color:rgb(156, 180, 158);
+   color:rgb(121, 43, 131); 
 }
 
 .a{
    list-style-image:url("../images/sun-icon.png");
    color: white;
-   background-color: rgb(226 193 33 / 84%);
+   background-color: rgb(235 161 219 / 84%);
    padding-top: 15px;
    padding-bottom: 15px;
    border-radius: 10px;
@@ -44,7 +44,7 @@
    padding: 5px;
    margin:1%;
    font-family:Georgia;
-   color:rgb(156, 180, 158);
+   color:rgb(121, 43, 131);
 }
 
 .box4{
@@ -53,7 +53,7 @@
    display:inline-block;
    margin:1% 2%;
    padding:5px;
-   color:rgb(118, 141, 119);
+   color:rgb(31, 2, 23);
    transform: rotateY(30deg);
 }
 
@@ -109,7 +109,7 @@
    right: 20px;
    width: 60px;
    height: 60px;
-   background-color: #85a385d7;
+   background-color: #f3a8efd7;
    border-radius: 20%;
    display: flex;
 }

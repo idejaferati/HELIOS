@@ -1,5 +1,5 @@
 .result{
-    background:linear-gradient(  rgb(254, 228, 100), rgb(113, 113, 175) );
+    background:linear-gradient(  rgb(240, 177, 219), rgb(125, 93, 138) );
      margin-top: 60px;
     padding-top: 40px;
     color: white;
@@ -10,7 +10,7 @@
     padding: 25px;   
 }
 .wrapper h1{
-    color: rgb(175, 211, 178);
+    color: rgb(211, 175, 203);
     text-shadow: 2px 2px whitesmoke;
   transform: rotateX(30deg);
 
@@ -37,7 +37,7 @@
     position: relative;
     right: 2em;
     padding-left: 40px;
-    color: rgb(88, 74, 2); 
+    color: rgb(88, 2, 81); 
 }
 
 .students{
@@ -48,40 +48,40 @@
     padding: 10px;
     font-style: oblique;
     font-weight: bolder;
-    color:#f2f7f1 ;
+    color:#ee89c4 ;
 }
 .person{
     display: inline-block;
     width: 300px;
     height: 300px;
     padding: 17px;
-    background-color: rgb(221, 185, 3);
+    background-color: rgb(235, 149, 220);
     margin: 10px;
     border-radius: 6px;
     border-style:ridge;
     color: white;
     box-shadow: 7px 7px 2px 1px rgb(206 229 208);
     outline-style:outset ;
-    outline-color: aquamarine;
+    outline-color: rgb(240, 149, 232);
     outline-width: 3px;
 }
 .note{
-    background-color:rgb(206, 229, 208) ;
+    background-color:rgb(229, 206, 223) ;
     font-style: italic;
     margin: 30px;
     border-radius: 6px;
     border-style:outset;
-    color: rgb(156, 175, 158);   
+    color: rgb(100, 22, 86);   
 
  
 }
 .b{
     word-wrap: break-word;
     width: 300px;
-    background-color: rgba(9, 80, 53, 0.164);
+    background-color: rgba(184, 35, 139, 0.164);
    resize: both;
    overflow: auto;
-   outline:5px dashed gray;
+   outline:5px dashed rgb(214, 131, 196);
    font-family: myFont;
    animation-name: move;
    animation-duration: 8s;
@@ -91,7 +91,7 @@
 #canvas {
     width: 100%;
     height: 3px;
-    background-color: rgba(9, 80, 53, 0.164);
+    background-color: rgba(80, 9, 71, 0.164);
 }
 @keyframes move {
     from {transform:translateX(0)}

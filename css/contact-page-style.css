@@ -49,7 +49,7 @@
 .icon{
     min-width: 60px;
     height: 60px;
-    background:rgb(254, 228, 100) ;
+    background:rgb(254, 100, 208) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,17 +60,17 @@
     display: flex;
     margin-left:20px ;
     font-size: 16px;
-    color: #747272;
+    color: #747273;
     flex-direction: column;
     font-weight: 300;
 }
 .text h3{
     font-weight: 500;
-    color: rgb(211 176 4);
+    color: rgb(214 105 165);
 }
 .choose{
     padding: 2%;
-    background-color:  rgb(254, 228, 100);
+    background-color:  rgb(254, 100, 203);
     border-radius: 20px;
     text-align: center;
     margin: 5px;  
@@ -90,7 +90,7 @@
 }
 h2{
     font-size: 30px;
-    color:rgb(254, 228, 100) ;
+    color:rgb(254, 100, 195) ;
     font-weight: 500;
 }
 .inputBox{
@@ -104,7 +104,7 @@ input, textarea{
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid rgb(206, 229, 208);
+    border-bottom: 2px solid rgb(229, 206, 223);
     outline:none ;
     resize: none;
 }
@@ -119,16 +119,16 @@ i{
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color:rgb(160, 163, 161);
+    color:rgb(163, 160, 163);
 }
 input:focus~span, input:valid~span, textarea:focus~span, textarea:valid~span {
-    color: rgb(254, 228, 100);
+    color: rgb(230, 118, 187);
     font-size: 12px;
     transform: translateY(-20px);
 }
 input[type="submit"]{
     width: 100px;
-    background: rgb(254, 228, 100);
+    background: rgb(254, 100, 208);
     border:none;
     cursor: pointer;
     padding: 10px;
@@ -139,7 +139,7 @@ input[type="date"] {
     color: transparent;
 }
 input[type="date"]:focus, input[type="date"]:valid {
-    color: gray;
+    color: rgb(128, 128, 128);
 }
 .map{
     color: white;
@@ -222,11 +222,11 @@ input[type="date"]:focus, input[type="date"]:valid {
     background-color: #b4b3b3;
 }
 .buttons #save {
-    background-color:rgb(206, 229, 208) ;
+    background-color:rgb(229, 206, 220) ;
 }
 .buttons #save:hover {
-    background-color: rgb(110, 218, 200);
-    color: rgb(254, 228, 100);
+    background-color: rgb(211, 133, 191);
+    color: rgb(254, 100, 177);
 }
 #open-dialog {
     background: transparent;
@@ -234,12 +234,12 @@ input[type="date"]:focus, input[type="date"]:valid {
 }
 /*drag and drop*/
 #div1, #div2 {
-    background-color: rgb(223, 194, 67);
+    background-color: rgb(235, 111, 183);
     width: 100px;
     height: 100px;
     margin: 10px;
     padding: 5px;
-    border: 1px solid rgb(66, 43, 43);
+    border: 1px solid rgb(66, 43, 59);
     margin-top:3%;
 }
 #div1 img, #div2 img {
