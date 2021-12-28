@@ -28,10 +28,10 @@
     display: flex;
     gap: 1em;
     padding-bottom: 1em;
-    color: rgb(248, 211, 30);
+    color: rgb(121, 43, 131);
 } 
 .stepper-item a:visited, .stepper-item a:hover, .stepper-item a:active, .stepper-item a:link {
-    color: rgb(248, 211, 30);
+    color: rgb(121, 43, 131);
     background-color: transparent;
     text-decoration: none;
 }
@@ -74,8 +74,8 @@
 }
 .quote-div {
     flex-basis: 28%;
-    background-color:rgb(254, 228, 100) ;
-    color: #649164;
+    background-color:rgb(233, 195, 238) ;
+    color: rgb(121, 43, 131);
     border-radius: 4px;
 }
 .quote-div q {
@@ -109,7 +109,7 @@
 }
 #square-ul {
     list-style-type: square;
-    color: rgb(170, 189, 171);
+    color: rgb(220, 175, 226);
    
 }
 
@@ -118,7 +118,7 @@
     background-color: white;
     padding: 10px;
     border-radius: 5px;
-    color: rgb(204, 171, 7);
+    color: rgb(36, 7, 145);
 }
 .tables-section {
     padding: 20px 40px;
@@ -130,20 +130,20 @@ table.weekly-plan, .weekly-plan th, .weekly-plan td {
     border: 1px solid black;
     border-radius: 4px;
     border-style: groove;
-    border-color: rgb(254, 228, 100);
+    border-color: rgb(220, 175, 226);
     text-align: -webkit-center;
-   background-color:rgba(206, 229, 208,0.5) ;
+   background-color:rgba(229, 206, 223, 0.5) ;
     padding: 2px;
 }
 .weekly-plan th:not(:nth-child(3)), .weekly-plan td:not(:nth-child(3)) {
     width: 13%;
 }
 .weekly-plan td:nth-child(4) {
-    background-color:rgb(206, 229, 208) ;
+    background-color:rgba(229, 206, 223, 0.5) ;
 }
 table.weekly-plan {
     margin: 40px;
-    box-shadow: 7px 7px 2px 1px rgb(174, 194, 176);
+    box-shadow: 7px 7px 2px 1px rgb(192, 174, 194);
 }
 .weekly-plan th img {
     float: left;
@@ -158,7 +158,7 @@ table.weekly-plan {
     text-align: left;
 }
 colgroup {
-    background: radial-gradient(100% 544.44% at 0% 7.94%,#f8e6d7 0%,#f8bf90 100%);
+    background: radial-gradient(100% 544.44% at 0% 7.94%,#f8d7f5 0%,#d4a6ce 100%);
 }
 
 
@@ -171,7 +171,7 @@ colgroup {
     width: 90%;
 }
 .members-table .member {
-    border-color: yellow;
+    border-color: rgb(220, 175, 226);
     color: whitesmoke;
     box-sizing: border-box;
     border: 0;
@@ -188,7 +188,7 @@ colgroup {
     box-sizing: border-box;
     border-collapse: collapse;
     border-radius: 10px 20px 10px 20px;
-    background: radial-gradient(100% 544.44% at 0% 7.94%,rgb(253, 238, 160) 0%,rgb(248, 214, 46) 100%);
+    background: radial-gradient(100% 544.44% at 0% 7.94%,rgb(216, 195, 226) 0%,rgb(200, 140, 212) 100%);
 }
 
 .members-table th {
@@ -266,7 +266,7 @@ colgroup {
 .school p{
     
     text-align: center;
-    color: rgb(254, 228, 100);
+    color: rgb(220, 175, 226);
 }
 
 .txt-format {
