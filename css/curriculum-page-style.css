@@ -46,7 +46,15 @@
    font-family:Georgia;
    color:rgb(121, 43, 131);
 }
+.box2 h1{
+   border: 5px solid transparent;
+   border-image: url(../images/border.png) 30 round;
+   /*30 eshte border-slice qe do te thote menyra si me e nda border image
+   round eshte border-image-repeat*/
+   padding: 10px;
 
+
+}
 .box4{
    width:95%;
    height:fit-content;
