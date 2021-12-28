@@ -30,7 +30,7 @@
 .box{
     height:auto;
     width: 92%;
-    background-color:rgba(253, 167, 239, 0.69);
+    background-color:rgba(238, 163, 225, 0.69);
     background-origin:padding-box;
     font-size:18px;
     padding:3px 45px;
@@ -41,6 +41,7 @@
     margin-bottom: 50px;
     box-shadow: 7px 7px 2px 1px rgb(245, 210, 238);
 }
+    
 .text{
     font-size: 30px;
     color:rgb(121, 43, 131);

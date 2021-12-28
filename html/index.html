@@ -200,7 +200,15 @@
              </div>
          </section>
          <div class="autisticpeople">
-              <h4 style="color: rgb(122, 29, 99); text-align: center;">We see geometric objects, autistic people see art</h4>
+          <canvas id="myCanvas" width="700" height="70"
+          style="text-align: center; ">
+          </canvas>
+          <script> canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.font = "30px Arial";
+          ctx.strokeText("We see geometric objects, autistic people see art", 10, 50);
+          </script>
+          <br>
           <svg width="400" height="110">
                <rect width="300" height="100" style="fill:rgb(236, 233, 39);stroke-width:3;stroke:rgb(169, 150, 214)" />
           </svg>
