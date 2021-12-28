@@ -40,7 +40,7 @@ body
     position: fixed;
     width: 100%;
     top: 0;
-    border-bottom: 1px solid #ffc107;
+    border-bottom: 1px solid #ec85e7;
     text-align: right;
     height: 76px;
     line-height: 70px;
@@ -52,18 +52,18 @@ body
     margin: 0px auto;
     width: 700px;
     position: relative;
-    background-color: rgb(206, 229, 208);
+    background-color: rgb(229, 206, 227);
 }
 .menu a {
     font-weight: normal;
     clear: right;
     text-decoration: none;
-    color:rgb(156 175 158);
+    color:rgb(121, 43, 131);
     margin: 0 10px;
     line-height: 70px;
 }
 .menu a:hover {
-    text-shadow: 0 0 20px rgb(254, 228, 100);
+    text-shadow: 0 0 20px rgb(238, 146, 230);
     transition: all 0.3s ease;
 }
 .current-page {
@@ -76,7 +76,7 @@ body
     float: left;
     margin: auto;
     position: fixed;
-    background-color: rgb(206, 229, 208);
+    background-color: rgb(229, 206, 225);
     z-index: 99;
 }
 
@@ -86,7 +86,7 @@ body
     font-weight: bold;
     text-align: center;
     background:whitesmoke;
-    color:rgb(151, 173, 153);
+    color:rgb(109, 44, 103);
     font-family:'helvetica neue', sans-serif;
     letter-spacing: 1px;
     position:absolute;
@@ -144,7 +144,7 @@ a {
     padding: 0px;
 }
 .footer-right-div ul li a{
-    color:rgb(151, 173, 153);
+    color:rgb(197, 163, 195);
 }
 .footer-right-div ul li img{
     width: 14px;

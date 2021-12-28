@@ -18,9 +18,9 @@
     margin: 10px 20px;
     position: absolute;
     z-index: 9;
-    background-color:rgb(254, 228, 100);
+    background-color:rgb(234, 178, 236);
     bottom: 4px;
-    color: rgb(156, 175, 158);
+    color: rgb(121, 43, 131);
 }
 .offers-div div {
     margin: 10px;
@@ -35,7 +35,7 @@ section {
 .events-section {
     margin: 50px 20px;
     font-family: myriad-pro, Arial;
-    color:rgb(156, 175, 158);
+    color:rgb(150, 74, 133);
     
 } 
 .events-section h2 {
@@ -48,7 +48,7 @@ section {
 .event-div {
     flex: 1;
     background-color:white ;
-    border: 1px solid rgb(206, 229, 208);
+    border: 1px solid rgb(233, 201, 225);
     margin-bottom: 20px;
     margin: 10px;
     border-radius: 5px;
@@ -62,13 +62,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(156, 175, 158);
+    color: rgb(163, 85, 144);
     text-align: center;
     font-size: 10px;
     line-height: 1.2;
     padding: 5px;
     margin-right: 10px;
-    background: radial-gradient(100% 544.44% at 0% 7.94%,rgb(198, 238, 202) 0%,rgb(206, 229, 208) 100%);
+    background: radial-gradient(100% 544.44% at 0% 7.94%,rgb(238, 198, 229) 0%,rgb(228, 215, 226) 100%);
 }
 
 /*Academic Network section*/
@@ -92,15 +92,15 @@ section {
     width: 100%;
 }
 .academic-section th {
-    background: rgb(226 193 33 / 90%);
+    background: rgb(243 158 232 / 90%);
     color: hsl(0deg 0% 100%);
 }
 .academic-section td {
-    background-color: rgb(226 193 33 / 90%);
+    background-color: rgb(243 158 232 / 90%);
   
 }
 .academic-section td a {
-    color: rgb(90, 109, 92);
+    color: rgb(109, 90, 106);
 }
 .academic-section td:hover {
     background-color: whitesmoke;
@@ -108,7 +108,7 @@ section {
     font-weight: bolder;
 }
 .academic-section a:hover{
-    color:rgb(254, 228, 100);
+    color:rgb(243, 158, 232);
 }
 
 /*goals*/
@@ -125,7 +125,7 @@ section {
 .goals-table .goal {
     max-width: 375px;
     border-color: #ededf0;
-    color:rgb(156, 175, 158);
+    color:rgb(121, 43, 131);
     vertical-align: baseline;
     float: left;
     width: 100%;
@@ -137,7 +137,7 @@ section {
     border-collapse: collapse;
     border-radius: 10px 10px 50px 10px;
     transition: all .2s ease-in-out; 
-    background: radial-gradient(100% 544.44% at 0% 7.94%,rgb(254, 228, 100) 0%,rgb(206, 229, 208) 100%);
+    background: radial-gradient(100% 544.44% at 0% 7.94%,rgb(223, 128, 210) 0%,rgb(229, 206, 224) 100%);
 
 }
 .goals-table th {
@@ -157,7 +157,7 @@ section {
 }
 .goal:hover {
     transform: scale(1.1); 
-    color:rgb(156, 175, 158);
+    color:rgb(236, 170, 225);
     
 }
 .read-button {
@@ -177,7 +177,7 @@ section {
     margin: 10px;
 }
 .read-button:hover {
-    background-color:rgb(254, 228, 100);
+    background-color:rgb(240, 151, 221);
     color:white ;
     cursor: pointer;
 }
