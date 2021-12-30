@@ -10,6 +10,47 @@
          <script src="../js/header_footer.js"></script>
          <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
          <link rel="stylesheet" href="../css/home-page-style.css" type="text/css" media="all">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#remove").click(function(){
+    $("rect").fadeOut();
+    $("circle").fadeOut("slow");
+    
+    $("polygon").fadeOut("slow");
+    $("ellipse").fadeOut(3000);
+    $("#img-canvas").fadeOut("slow");
+  });
+});
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("rect").fadeIn();
+    $("circle").fadeIn("slow");
+    
+    $("polygon").fadeIn("slow");
+    $("ellipse").fadeIn(3000);
+    $("#img-canvas").fadeIn("slow");
+  });
+});
+ 
+$(document).ready(function(){
+  $("#up").click(function(){
+    $("video").slideUp("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("table").click(function(){
+    $("table").animate({
+     
+    width:"100%",
+    
+     
+    });
+  });
+});
+
+</script>
     </head>
   
     <body>
@@ -72,8 +113,8 @@
           </script>
           <audio src="../audio/welcomeaudio.html.mp3"  controls></audio>
           <br>
-          <p>What is Autism?</p>
-          
+          <p id="what">What is Autism?</p>
+          <p id="up" style="text-align: center;">Slide up the video</p>
           <video width="100%" controls>
                <source src="../video/What is Autism _ Quick Learner.mp4" type="video/mp4">
           </video>
@@ -230,6 +271,8 @@
                var img = document.getElementById("sun");
                ctx.drawImage(img,10,10);
           </script>
+          <button id="remove"> Remove the objects</button>
+          <button id="show">Show the objects</button>
          <hr>
         
          <footer id="footer">

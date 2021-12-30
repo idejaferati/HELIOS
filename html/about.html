@@ -8,8 +8,18 @@
          <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
          <link rel="icon" href="../images/autism.png"/>
          <script src="../js/header_footer.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
          <link rel="stylesheet" href="../css/about-page-style.css" type="text/css" media="all">
+         <script>
+          $(document).ready(function(){
+            $(".school").dblclick(function(){
+              $(this).hide("slow",function(){
+      alert("The photos are now hidden");
+    });
+            });
+          });
+          </script>
     </head>
   
     <body>

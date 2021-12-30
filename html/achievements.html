@@ -10,6 +10,20 @@
         <script src="../js/header_footer.js"></script>
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="../css/achievements-page-style.css" type="text/css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("img").hide();
+          });
+     });
+          $(document).ready(function(){
+          $("#show").click(function(){
+            $("img").show();
+          });
+        });
+     
+        </script>
     </head>
     <body>
           <header id="header">
@@ -57,8 +71,10 @@
                          <p>International Cooperations</p>
                     </div>
                </div>
+              
              
           </div>
+         
           <div class="InternationalAchievements">
                <h2 style="text-align: center; color: rgb(214, 105, 165);">International Achievements of HELIOS school</h2>
                <br>
@@ -118,6 +134,8 @@
                     </ul>
                </div>
           </div>
+          <button id="hide" style="background-color: rgb(136, 125, 211); border: none; margin-left: 40%;">Hide the photo</button>
+          <button id="show" style="background-color: rgb(209, 93, 190); border: none;">Show the photo</button>
 
           <canvas id="canvas"></canvas>
           <script>
