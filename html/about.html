@@ -291,6 +291,32 @@
          </div>
 
          <hr>
+    
+         
+<h4 style="text-align: center;">Just a dot with those coordinates in space, but if many dots get together for the same purpose, there can be a difference!</h4>
+<button style="margin-left: 43%;background-color: thistle;" onclick="getLocation()">Get your coordinates</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  
+}
+</script>
+
+<hr>
 
          <footer id="footer">
               <!--jscode-->
