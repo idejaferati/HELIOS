@@ -75,9 +75,8 @@
                     }
                 </script>
                 <div class="box3">
-                    <p>
-                         <h3 align="center" style=" color:rgb(214, 105, 165) ;" bold> What are educational standards? </h3>
-                         <br>
+                    <h3 align="center" style=" color:rgb(214, 105, 165) ;" bold> What are educational standards? </h3>
+                    <p class="multi-cols">
                          Educational standards are the learning goals for what students should know and be able to do at each grade level. 
                          Education standards, like Common Core are not a curriculum. At Helios we use Houghton Mifflin Harcourt® for our 
                          curriculum development. In other words, the Common Core is what students need to know and be able to do, and curriculum 
@@ -213,7 +212,49 @@
         <div>
             <fieldset>
                 <legend>Do a bit of math</legend>
-                <p>Add the number of our campuses with 1300 students for each</p>
+                <p>Add the number of our campuses with 
+                    <output id="result">1300</output>
+                    students for each 
+                    <button onclick="startWorker()">Increase number of students</button> 
+                    <button onclick="stopWorker()">Stop increasing</button>
+                    <!--Web worker-->
+                    <!--reference here: https://stackoverflow.com/questions/21408510/chrome-cant-load-web-worker-->
+                    <script>
+                        function timedCount(i) {
+                            i = i + 1;
+                            postMessage(i);
+                            setTimeout(timedCount.bind(null,i), 500)
+                        }
+                        var w;
+                        
+                        function startWorker() {
+                            var blob = new Blob([
+                                "onmessage = function(e){\
+                                    " + timedCount.toString() + "\
+                                    timedCount(e.data.i);}"
+                            ]);
+                            var blobURL = window.URL.createObjectURL(blob);
+                            if(typeof(Worker) !== "undefined") {
+                                console.log("support");
+                                if(typeof(w) == "undefined") {
+                                    w = new Worker(blobURL);
+                                }
+                                w.onmessage = function(event) {
+                                    document.getElementById("result").innerHTML = event.data;
+                                };
+                                w.postMessage({i:1300})
+                            } else {
+                                console.log("not support");
+                                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+                            }
+                        }
+                        
+                        function stopWorker() { 
+                            w.terminate();
+                            w = undefined;
+                        }
+                    </script>
+                </p>
                 <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
                         <input type="range" id="a" value="5" disabled >
                         *<input type="number" id="b" value="25" max="1300" placeholder="1300" >
