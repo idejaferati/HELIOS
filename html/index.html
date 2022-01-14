@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Helios Autism School</title>
+         <!--character encoding-->
+         <meta charset="UTF-8"> 
+         <!--responsive-->
+         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+         <link rel="icon" href="../images/autism.png"/>
+         <script src="../js/header_footer.js"></script>
+         <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+         <link rel="stylesheet" href="../css/home-page-style.css" type="text/css" media="all">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#remove").click(function(){
+    $("rect").fadeOut();
+    $("circle").fadeOut("slow");
+    
+    $("polygon").fadeOut("slow");
+    $("ellipse").fadeOut(3000);
+    $("#img-canvas").fadeOut("slow");
+  });
+});
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("rect").fadeIn();
+    $("circle").fadeIn("slow");
+    
+    $("polygon").fadeIn("slow");
+    $("ellipse").fadeIn(3000);
+    $("#img-canvas").fadeIn("slow");
+  });
+});
+ 
+$(document).ready(function(){
+  $("#up").click(function(){
+    $("video").slideUp("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("table").click(function(){
+    $("table").animate({
+     
+    width:"100%",
+    
+     
+    });
+  });
+});
+
+</script>
+    </head>
+  
+    <body>
+         <header id="header">
+              <!--jscode-->
+         </header>
+
+         <nav class="menu-nav">
+          <div class="menu">
+               <a href="index.html">
+                    <span class="current-page">Home</span>
+               </a>
+               <a href="about.html">About</a>
+               <a href="curriculum.html">Curriculum</a>
+               <a href="parents.html">Parents</a>
+               <a href="achievements.html">Achievements</a>
+               <a href="contact.html">Contact</a>
+               
+           </div>
+         </nav>
+
+         <section>
+     
+              <div class="main-background-div">
+                   <img src="../images/school.jpg" alt="A child in school">
+              </div>
+              
+              <div class="offers-div">
+                   <div>
+                        <h3><abbr title="Helios Autism School">HAS</abbr> Trainings</h3>
+                         <p>
+                              Explore our Professional Development Programmes and discover brand new modules.
+                         </p>
+                   </div>
+                   <div>
+                         <h3>Therapy</h3>
+                         <p>
+                              Explore our Professional Development Programmes and discover brand new modules.
+                         </p>
+                    </div>
+                    <div>
+                         <h3>Other benefits</h3>
+                          <p>
+                              Explore our Professional Development Programmes and discover brand new modules.
+                          </p>
+                    </div>
+              </div>
+          </section>
+          <div style="text-align: center;">
+          <p>Welcome to our website</p>
+          <canvas id="gradient-canvas"></canvas>
+          <script>
+               var x = document.getElementById("gradient-canvas");
+               var ctx = x.getContext("2d");
+               var y = ctx.createRadialGradient(75,50,5,90,60,100);
+               y.addColorStop(0,"yellow");
+               y.addColorStop(1,"white");
+               ctx.fillStyle = y;
+               ctx.fillRect(10,10,220,220);
+          </script>
+          <audio src="../audio/welcomeaudio.html.mp3"  controls></audio>
+          <br>
+          <p id="what">What is Autism?</p>
+          <p id="up" style="text-align: center;">Slide up the video</p>
+          <video width="100%" controls>
+               <source src="../video/What is Autism _ Quick Learner.mp4" type="video/mp4">
+          </video>
+
+
+          <section class="events-section">
+               <h2>Upcoming Events</h2>
+               <div class="events-container">
+                    <div class="event-div">
+                         <div class="event-date">18<br>December</div>
+                         <div>
+                              <dl>
+                                   <dt>Interviews</dt>
+                                        <dd>- interview with Dr. Prof. Rudolf Kanol</dd>
+                                   <dt>Activities</dt>
+                                        <dd>- outdoor activities</dd>
+                              </dl>
+                         </div>
+                    </div>
+                    <div class="event-div">
+                         <div class="event-date">28<br>December</div>
+                         <div>
+                              <ul>
+                                   <li>Research on the topic of psychology</li>
+                                   <li>Methodologies to be used:
+                                        <ol>
+                                             <li>Survey</li>
+                                             <li>Questionaries</li>
+                                        </ol>
+                                   </li>
+                                   <li>Analyze results</li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>    
+         </section>
+
+         <section class="academic-section">
+              <h1 style="color:#f5b2d9">Academic Network</h4>
+              <table>
+                   <tr>
+                        <th colspan="3">
+                             <i>Our pioneering role is based on our close cooperation in training and further education with leading universities.</i>
+                        </th>
+                   </tr>
+                   <tr>
+                        <td><a href="https://www.harvard.edu/" target="_blank">Harvard University</a></td>
+                        <td><a href="https://www.stanford.edu/" target="_blank">Stanford University</a></td>
+                        <td><a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a></td>
+                   </tr>
+                   <tr>
+                        <td><a href="https://www.columbia.edu/" target="_blank">Columbia University</a></td>
+                        <td><a href="https://umich.edu/" target="_blank">University of Michigan</a></td>
+                        <td><a href="https://www.cam.ac.uk/" target="_blank">University of Cambridge</a></td>
+                   </tr>
+               </table>
+         </section>
+
+         <section class="goals-section">
+               <div class="goals-div">
+                    <table class="goals-table">
+                         <tr>
+                              <th colspan="3" style="color: rgb(146, 47, 133);font-size: 25px;">Our goals</th>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <div class="goal">
+                                        <h3>Teaching</h3>
+                                        <p>Improve the education of autistic children and young people.</p>  
+                                        <div class="read-button">
+                                             <a href="curriculum.html" style="color: white;">Read more</a>
+                                        </div>
+                                   </div>
+                              </td>
+                              <td>
+                                   <div class="goal">
+                                        <h3>Socializing</h3>
+                                        <p>Enable individuals to reach their potential and engage in society.</p>  
+                                        <div class="read-button">
+                                             <a href="curriculum.html" style="color: white;">Read more</a>
+                                        </div>
+                                   </div>
+                              </td>
+                              <td>
+                                   <div class="goal">
+                                        <h3>Support</h3>
+                                        <p>Support and inform education professionals.</p>  
+                                        <div class="read-button">
+                                             <a href="curriculum.html" style="color: white;">Read more</a>
+                                        </div>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   <div class="goal">
+                                        <h3>Behaviour</h3>
+                                        <p>Embedding positive attitudes towards neurodiversity.</p>  
+                                        <div class="read-button">
+                                             <a href="curriculum.html" style="color: white;">Read more</a>
+                                        </div>
+                                   </div>
+                              </td>
+                              <td>
+                                   <div class="goal">
+                                        <h3>Comunication</h3>
+                                        <p>Increasing social communication skills.</p>  
+                                        <div class="read-button">
+                                             <a href="curriculum.html" style="color: white;">Read more</a>
+                                        </div>
+                                   </div>
+                              </td>
+                              <td>
+                                   <div class="goal">
+                                        <h3>Happiness</h3>
+                                        <p>Achieving to put a smile on the faces of these children warms our hearts.</p>  
+                                        <div class="read-button">
+                                             <a href="curriculum.html" style="color: white;" >Read more</a>
+                                        </div>
+                                   </div>
+                              </td>
+                         </tr>
+                    </table>
+             </div>
+         </section>
+         <div class="autisticpeople">
+          <canvas id="myCanvas" width="700" height="70"
+          style="text-align: center; ">
+          </canvas>
+          <script> canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.font = "30px Arial";
+          ctx.strokeText("We see geometric objects, autistic people see art", 10, 50);
+          </script>
+          <br>
+          <svg width="400" height="110">
+               <rect width="300" height="100" style="fill:rgb(236, 233, 39);stroke-width:3;stroke:rgb(169, 150, 214)" />
+          </svg>
+          <svg height="110" width="110">
+               <circle cx="60" cy="60" r="40" stroke="black" stroke-width="3" fill="red" />
+          </svg>
+          <svg height="150" width="350" id="rotate-3d">
+               <polygon points="180,10 230,140 140,110" style="fill:lime;stroke:purple;stroke-width:1" />
+          </svg>
+          <svg height="140" width="300" id="elipse-move">
+               <ellipse cx="200" cy="80" rx="100" ry="50" style="fill:yellow;stroke:rgb(238, 139, 9);stroke-width:2" />
+          </svg>
+         </div>
+         <img id="sun" src="../images/sun-icon.png" alt="sun" width="30" height="30" style="display:none;">
+         <canvas id="img-canvas" width="30" height="30"></canvas>
+         <script>
+               var c = document.getElementById("img-canvas");
+               var ctx = c.getContext("2d");
+               var img = document.getElementById("sun");
+               ctx.drawImage(img,10,10);
+          </script>
+          <button id="remove"> Remove the objects</button>
+          <button id="show">Show the objects</button>
+         <hr>
+        
+         <footer id="footer">
+              <!--jscode-->
+         </footer>
+    </body>
+</html>
