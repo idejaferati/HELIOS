@@ -10,7 +10,7 @@
          <script src="../js/header_footer.js"></script>
          <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
          <link rel="stylesheet" href="../css/parents-page-style.css" type="text/css" media="all">
-
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
   
     <body>
@@ -155,10 +155,20 @@
                </article>
                <article class="happyparent1">
                    <h2>Drita Ferati</h2>
-                   <p>Helios school has made my life easier. Seeing my child happy after school makes my day better.</p>
+                   <span id="append-el">Helios school has made my life easier.</span>
+                   <button id="show-more">show more...</button>
                </article>
           </article>
-
+          <script>
+               $(document).ready(function(){
+                 $("#show-more").click(function(){
+                   $("#append-el").append(`
+                    <span>Seeing my child happy after school makes my day better.</span>
+                   `);
+                   $("#show-more").remove();
+                 });
+               });
+          </script>
          <footer id="footer">
               <!--jscode-->
          </footer>

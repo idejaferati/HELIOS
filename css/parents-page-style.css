@@ -92,7 +92,8 @@ mark {
 }
 
 .happyparent1 > h2,
-.happyparent1 > p {
+.happyparent1 > p,
+.happyparent1 > span {
     margin: .2rem;
     font-size: 1rem;
 }

@@ -249,3 +249,17 @@ input[type="date"]:focus, input[type="date"]:valid {
 .dragdrop-div {
     display: flex;
 }
+#hide {
+    visibility: hidden;
+}
+.country-code {
+    display: flex;
+}
+.country-code .inputBox input{
+    width: 95%;
+}
+#ks {
+    height: 32px;
+    margin-bottom: 10px;
+    align-self: self-end;
+}

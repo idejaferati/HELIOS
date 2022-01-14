@@ -15,8 +15,8 @@
           $(document).ready(function(){
             $(".school").dblclick(function(){
               $(this).hide("slow",function(){
-      alert("The photos are now hidden");
-    });
+                    alert("The photos are now hidden");
+               });
             });
           });
           </script>
@@ -102,14 +102,14 @@
                                         </script>
                                         Our curriculum is a customizable educational tool that adapts to the various abilities of each student. It incorporates visual cues and teaching based on applied behavior analysis to facilitate the learning capability of our children and thus enhance results.
                                         <br>
-                                        In addition all students are assessed and screened with the <span class="txt-format">brigance</span> instructional tool to ensure our team of teachers and therapist have a full vision of the needs of our students.
+                                        In addition all students are assessed and screened with the <span class="txt-format">brigance</span> instructional tool to ensure our team of teachers and therapist have a full vision of the needs of our 
                                         <script>
                                              let c = "a full vision of the needs of our students.";   
-                                             let d = c.match(/students/gi);   
-                                             document.write(d + ".");  
+                                             let dc = c.match(/students/gi);   
+                                             document.write(dc + ".");  
                                         </script>
                                         <br>
-                                        Out school is ranked with 
+                                        Our school is ranked with 
                                         <script>
                                              let num = Math.abs(-50.5);
                                              let n = num.toExponential();
@@ -287,14 +287,14 @@
                          </div>
 
                     </section>
+                    <hr>
+                    <section>                                 
+                         <h4 style="text-align: center;">Just a dot with those coordinates in space, but if many dots get together for the same purpose, there can be a difference!</h4>
+                         <button style="margin-left: 43%;background-color: thistle;" onclick="getLocation()">Get your coordinates</button>
+                    </section>
                </div>
          </div>
-
-         <hr>
     
-         
-<h4 style="text-align: center;">Just a dot with those coordinates in space, but if many dots get together for the same purpose, there can be a difference!</h4>
-<button style="margin-left: 43%;background-color: thistle;" onclick="getLocation()">Get your coordinates</button>
 
 <p id="demo"></p>
 
@@ -311,7 +311,7 @@ function getLocation() {
 
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  " and Longitude: " + position.coords.longitude;
   
 }
 </script>

@@ -23,7 +23,7 @@ function validateEmail() {
 
 function validateFullName() {
     var fullname = document.getElementById("fullName");
-    var re = fullname.value.search(/^[a-zA-Z]{2,}$/);
+    var re = fullname.value.search(/^[a-zA-Z\s]{2,}$/);
     try {
         if (re != 0) throw "Invalid Fullname!";
     }

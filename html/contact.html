@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="../css/contact-page-style.css" type="text/css" media="all">
         <script src="https://kit.fontawesome.com/ecebb8f563.js" crossorigin="anonymous"></script>
-  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <header id="header">
@@ -82,22 +82,35 @@
                             <input id="email" type="email" name="" autocomplete="on" required="required" onchange="validateEmail()">
                             <span class="Instructions">Email</span>
                         </div>
-                        <div class="inputBox">
-                            <input id="country_code" type="text" name="" required="required" pattern="[A-Za-a]{3}">
-                            <span class="Instructions">Country code</span>
+                        <div class="country-code">
+                            <div class="inputBox">
+                                <input id="country_code" type="text" name="" required="required" pattern="[A-Za-z]{2,3}">
+                                <span class="Instructions">Country code</span>
+                                <script>
+                                    $(document).ready(function(){
+                                        $("#ks").click(function(){
+                                            $("#country_code").val("KS");
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <button id="ks">KS</button>
                         </div>
                         <div class="inputBox">
                             <textarea required="required"></textarea>
                             <span class="Instructions">Type your message</span>
                         </div>
                         <div class="inputBox">
-                            <input type="submit" name="" value="Send" onclick="proceedAlert()">
+                            <input type="submit" name="" value="Send" id="submit">
                         </div>
                     </form>
+                    <p id="hide">Are you sure you want to proceed?</p>
                     <script>
-                        function proceedAlert() {
-                          alert("Are you sure you want to proceed?");
-                        }
+                        $(document).ready(function(){
+                          $("#submit").click(function(){
+                            alert($("#hide").text());
+                          });
+                        });
                     </script>
                 </div>
         </section>

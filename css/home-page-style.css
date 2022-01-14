@@ -193,3 +193,18 @@ section {
     position: absolute;
     bottom: 235px;
 }
+#rotate-3d {
+    transform: rotateZ(90deg);
+}
+#elipse-move {
+    position: relative;
+    animation-name: elipse-color;
+    animation-duration: 4s;
+}
+@keyframes elipse-color {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:rgb(182, 165, 12); left:20px; top:0px;}
+    50%  {background-color:rgb(167, 124, 7); left:20px; top:20px;}
+    75%  {background-color:rgb(180, 92, 9); left:0px; top:20px;}
+    100% {background-color:rgb(255, 115, 0); left:0px; top:0px;}
+}
